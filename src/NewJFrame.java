@@ -1,5 +1,8 @@
+import ic.util.Cleric;
+import ic.util.Bard;
 import ic.util.Constants;
 import java.awt.AWTException;
+import java.awt.CardLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics2D;
@@ -15,37 +18,103 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.IOException;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.ImageIcon;
+import javax.swing.JButton;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;  // Using Frame class in package java.awt
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JRadioButton;
 import javax.swing.JScrollPane;
 import javax.swing.JSlider;
 
 public class NewJFrame extends JFrame {
-    private int count = 0;     // Counter's value
-    static final int FPS_MIN = 0;
-    static final int FPS_MAX = 100;
-    static final int FPS_INIT = 50;    //initial frames per second
+    static final int INIT = 70;    //initial frames per second
     public static int sliderval;
     public static boolean isON;
+    JButton b1,b2,b3;  
     public static LinkedList<String> stream = new LinkedList<>();
+    LinkedList<JRadioButton> radioButtons = new LinkedList<>();
+    LinkedList<JPanel> panels = new LinkedList<>();
     //Create a file chooser
     final JFileChooser fc = new JFileChooser();
-    
-    //In response to a button click:
+    private CardLayout card;  
+    //In response to a button click
+    private JPanel jPanelBlank = new JPanel();
+    //private JPanel jPanelCLR = new JPanel();
+    //private JTextField jTextOrder = new JTextField();
+
+     
+    //private JCheckBox jrCHAIN, jrLHEAL, jCheckSIT;
     
     public NewJFrame() {
-        initComponents();
-        this.sliderval = FPS_INIT;
-       // jSlider1.setUI(new MySliderUI(jSlider1));
+        this.sliderval = INIT;
         this.isON = false;
         fc.setCurrentDirectory(new File("D:\\Games\\p99\\EQLITE\\Logs"));
+        initComponents();
+        //initCustomComponents();
+        
+        radioButtons.add(jrLeuke);
+        radioButtons.add(jrMorley);
+        radioButtons.add(jrSeike);
+        radioButtons.add(jrSaax);
+
+        panels.add(jPanel);
+        //container=getContentPane();
+        card=new CardLayout(150,150);  
+        card.setHgap(4);
+        card.setVgap(4);
+        
+        
+        
+        //create CardLayout object with 40 hor space and 30 ver space  
+        jPanel.setLayout(card);
+        jPanel.add(jPanelCLR,"CLR");
+        jPanel.add(jPanelNEC,"NEC");
+        jPanel.add(jPanelBlank,"BLANK");
+        jPanel.add(jPanelBRD,"BRD");
+        card.show(jPanel, "BLANK");
+        
+
+    }
+    
+    private void initCustomComponents() {
+        javax.swing.GroupLayout jPanelCLRLayout = new javax.swing.GroupLayout(jPanelCLR);
+        jPanelCLR.setLayout(jPanelCLRLayout);
+        jPanelCLRLayout.setHorizontalGroup(
+            jPanelCLRLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelCLRLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanelCLRLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(jPanelCLRLayout.createSequentialGroup()
+                        .addComponent(jrLHEAL)
+                        .addGap(18, 18, 18)
+                        .addComponent(jCheckSIT))
+                    .addGroup(jPanelCLRLayout.createSequentialGroup()
+                        .addComponent(jrCHAIN)
+                        .addGap(18, 18, 18)
+                        .addComponent(jTextOrder)))
+                .addContainerGap(9, Short.MAX_VALUE))
+        );
+        jPanelCLRLayout.setVerticalGroup(
+            jPanelCLRLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelCLRLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanelCLRLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jrLHEAL)
+                    .addComponent(jCheckSIT))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanelCLRLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jrCHAIN)
+                    .addComponent(jTextOrder, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
     }
     
 
@@ -63,6 +132,10 @@ public class NewJFrame extends JFrame {
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
+        jPopupMenu1 = new javax.swing.JPopupMenu();
+        jMenu3 = new javax.swing.JMenu();
+        jMenu4 = new javax.swing.JMenu();
+        jFrame1 = new javax.swing.JFrame();
         jPanel1 = new javax.swing.JPanel();
         jTabbedPane2 = new javax.swing.JTabbedPane();
         jPanel3 = new javax.swing.JPanel();
@@ -71,11 +144,11 @@ public class NewJFrame extends JFrame {
         filler2 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 50), new java.awt.Dimension(0, 50), new java.awt.Dimension(32767, 50));
         jPanel5 = new javax.swing.JPanel();
         jrMorley = new javax.swing.JRadioButton();
-        jPanel9 = new javax.swing.JPanel();
-        jSlowed = new javax.swing.JCheckBox();
-        jCheckSIT = new javax.swing.JCheckBox();
-        jrCHAIN = new javax.swing.JCheckBox();
-        jSlider1 = new javax.swing.JSlider();
+        jrLeuke = new javax.swing.JRadioButton();
+        jrSeike = new javax.swing.JRadioButton();
+        jrSaax = new javax.swing.JRadioButton();
+        jPanel = new javax.swing.JPanel();
+        filler3 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 32767));
         jPanel4 = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
         jTextLocation1 = new javax.swing.JTextField();
@@ -89,6 +162,18 @@ public class NewJFrame extends JFrame {
         log = new java.awt.TextArea();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTextPane1 = new javax.swing.JTextPane();
+        jPanel10 = new javax.swing.JPanel();
+        jSlider1 = new javax.swing.JSlider();
+        jPanelCLR = new javax.swing.JPanel();
+        jrLHEAL = new javax.swing.JCheckBox();
+        jrCHAIN = new javax.swing.JCheckBox();
+        jCheckSIT = new javax.swing.JCheckBox();
+        jTextOrder = new javax.swing.JTextField();
+        jSlowed = new javax.swing.JCheckBox();
+        jPanelNEC = new javax.swing.JPanel();
+        jCheckSIT1 = new javax.swing.JCheckBox();
+        jPanelBRD = new javax.swing.JPanel();
+        jrKITE = new javax.swing.JCheckBox();
 
         jTextField1.setText("jTextField1");
 
@@ -100,9 +185,25 @@ public class NewJFrame extends JFrame {
 
         jMenuItem1.setText("jMenuItem1");
 
+        jMenu3.setText("jMenu3");
+
+        jMenu4.setText("jMenu4");
+
+        javax.swing.GroupLayout jFrame1Layout = new javax.swing.GroupLayout(jFrame1.getContentPane());
+        jFrame1.getContentPane().setLayout(jFrame1Layout);
+        jFrame1Layout.setHorizontalGroup(
+            jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        jFrame1Layout.setVerticalGroup(
+            jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(255, 153, 153));
         setLocation(new java.awt.Point(1300, 200));
+        setPreferredSize(new java.awt.Dimension(470, 626));
 
         jPanel1.setBackground(new java.awt.Color(51, 51, 51));
         jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -110,17 +211,17 @@ public class NewJFrame extends JFrame {
         jPanel1.setFocusable(false);
         jPanel1.setPreferredSize(new java.awt.Dimension(350, 405));
 
-        jTabbedPane2.setBackground(new java.awt.Color(51, 51, 51));
+        jTabbedPane2.setBackground(new java.awt.Color(255, 204, 204));
         jTabbedPane2.setForeground(new java.awt.Color(0, 0, 0));
         jTabbedPane2.setToolTipText("");
 
         jPanel3.setBackground(new java.awt.Color(51, 51, 51));
         jPanel3.setForeground(new java.awt.Color(255, 255, 0));
 
-        jPanel2.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel2.setBackground(new java.awt.Color(0, 0, 0));
         jPanel2.setForeground(new java.awt.Color(51, 51, 51));
 
-        jPanel5.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel5.setBackground(Constants.colorNOTSELECTED);
         jPanel5.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         jrMorley.setBackground(Constants.colorNOTSELECTED);
@@ -133,75 +234,81 @@ public class NewJFrame extends JFrame {
             }
         });
 
+        jrLeuke.setBackground(Constants.colorNOTSELECTED);
+        jrLeuke.setForeground(new java.awt.Color(0, 0, 0));
+        jrLeuke.setText("Leuke");
+        jrLeuke.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        jrLeuke.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jrLeukeActionPerformed(evt);
+            }
+        });
+
+        jrSeike.setBackground(Constants.colorNOTSELECTED);
+        jrSeike.setForeground(new java.awt.Color(0, 0, 0));
+        jrSeike.setText("Seike");
+        jrSeike.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        jrSeike.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                jrSeikeStateChanged(evt);
+            }
+        });
+        jrSeike.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jrSeikeActionPerformed(evt);
+            }
+        });
+
+        jrSaax.setBackground(Constants.colorNOTSELECTED);
+        jrSaax.setForeground(new java.awt.Color(0, 0, 0));
+        jrSaax.setText("Saax");
+        jrSaax.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        jrSaax.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                jrSaaxStateChanged(evt);
+            }
+        });
+        jrSaax.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jrSaaxActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jrMorley, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 251, Short.MAX_VALUE)
+            .addComponent(jrMorley, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 279, Short.MAX_VALUE)
+            .addComponent(jrSeike, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jrLeuke, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jrSaax, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(36, 36, 36)
+                .addGap(16, 16, 16)
                 .addComponent(jrMorley)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jrSeike)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jrLeuke)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jrSaax)
+                .addContainerGap(91, Short.MAX_VALUE))
         );
 
-        jPanel9.setBackground(new java.awt.Color(204, 204, 204));
-        jPanel9.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel.setBackground(Constants.colorNOTSELECTED);
+        jPanel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jSlowed.setBackground(new java.awt.Color(204, 204, 204));
-        jSlowed.setForeground(new java.awt.Color(51, 51, 51));
-        jSlowed.setText("SLOWED");
-        jSlowed.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
-        jSlowed.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jSlowedActionPerformed(evt);
-            }
-        });
-
-        jCheckSIT.setBackground(new java.awt.Color(204, 204, 204));
-        jCheckSIT.setForeground(new java.awt.Color(51, 51, 51));
-        jCheckSIT.setSelected(true);
-        jCheckSIT.setText("SIT");
-        jCheckSIT.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
-        jCheckSIT.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckSITActionPerformed(evt);
-            }
-        });
-
-        jrCHAIN.setBackground(new java.awt.Color(204, 204, 204));
-        jrCHAIN.setForeground(new java.awt.Color(51, 51, 51));
-        jrCHAIN.setText("CHAIN");
-        jrCHAIN.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
-        jrCHAIN.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jrCHAINActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
-        jPanel9.setLayout(jPanel9Layout);
-        jPanel9Layout.setHorizontalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel9Layout.createSequentialGroup()
-                .addContainerGap(50, Short.MAX_VALUE)
-                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jrCHAIN)
-                    .addComponent(jCheckSIT)
-                    .addComponent(jSlowed)))
+        javax.swing.GroupLayout jPanelLayout = new javax.swing.GroupLayout(jPanel);
+        jPanel.setLayout(jPanelLayout);
+        jPanelLayout.setHorizontalGroup(
+            jPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 141, Short.MAX_VALUE)
         );
-        jPanel9Layout.setVerticalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel9Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jSlowed)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckSIT)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jrCHAIN)
-                .addContainerGap(10, Short.MAX_VALUE))
+        jPanelLayout.setVerticalGroup(
+            jPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -210,13 +317,13 @@ public class NewJFrame extends JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(filler1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(5, 5, 5)
-                .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(10, 10, 10)
                 .addComponent(filler2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -229,43 +336,29 @@ public class NewJFrame extends JFrame {
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(filler2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-            .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
-
-        jSlider1.setBackground(new java.awt.Color(51, 51, 51));
-        jSlider1.setForeground(new java.awt.Color(255, 255, 255));
-        jSlider1.setMajorTickSpacing(10);
-        jSlider1.setMinorTickSpacing(5);
-        jSlider1.setPaintLabels(true);
-        jSlider1.setPaintTicks(true);
-        jSlider1.setSnapToTicks(true);
-        jSlider1.setValue(70);
-        jSlider1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jSlider1.addChangeListener(new javax.swing.event.ChangeListener() {
-            public void stateChanged(javax.swing.event.ChangeEvent evt) {
-                jSlider1StateChanged(evt);
-            }
-        });
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jSlider1, javax.swing.GroupLayout.PREFERRED_SIZE, 345, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 406, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 43, Short.MAX_VALUE))
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(filler3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(50, 50, 50)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jSlider1, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(17, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(filler3, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(19, 19, 19))
         );
 
         jTabbedPane2.addTab("CHARACTER", jPanel3);
@@ -305,16 +398,16 @@ public class NewJFrame extends JFrame {
         jPanel6Layout.setHorizontalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
-                .addContainerGap(28, Short.MAX_VALUE)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
-                        .addComponent(jTextLocation1, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jtbLocate1)
-                        .addContainerGap())
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
-                        .addComponent(jLabel2)
-                        .addGap(58, 58, 58))))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jTextLocation1, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(43, 43, 43)
+                        .addComponent(jtbLocate1))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(53, 53, 53)
+                        .addComponent(jLabel2)))
+                .addContainerGap(59, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -323,7 +416,7 @@ public class NewJFrame extends JFrame {
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextLocation1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextLocation1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jtbLocate1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(10, Short.MAX_VALUE))
         );
@@ -335,14 +428,14 @@ public class NewJFrame extends JFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(43, 43, 43)
                 .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(173, Short.MAX_VALUE))
+                .addContainerGap(65, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(32, 32, 32)
                 .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(141, Short.MAX_VALUE))
+                .addContainerGap(121, Short.MAX_VALUE))
         );
 
         jTabbedPane2.addTab("LOCATE", jPanel4);
@@ -403,7 +496,7 @@ public class NewJFrame extends JFrame {
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(114, Short.MAX_VALUE))
+                .addContainerGap(110, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jbCapture)
@@ -414,14 +507,14 @@ public class NewJFrame extends JFrame {
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addGap(49, 49, 49)
                 .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 61, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
                 .addComponent(jbCapture)
                 .addGap(69, 69, 69))
         );
 
         jTabbedPane2.addTab("OPEN", jPanel7);
 
-        log.setBackground(new java.awt.Color(51, 51, 51));
+        log.setBackground(new java.awt.Color(0, 0, 0));
         log.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         log.setForeground(new java.awt.Color(255, 255, 255));
 
@@ -430,31 +523,212 @@ public class NewJFrame extends JFrame {
         jTextPane1.setForeground(new java.awt.Color(255, 255, 204));
         jScrollPane2.setViewportView(jTextPane1);
 
+        jPanel10.setBackground(Constants.colorNOTSELECTED);
+        jPanel10.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jSlider1.setBackground(Constants.colorNOTSELECTED);
+        jSlider1.setForeground(new java.awt.Color(0, 0, 0));
+        jSlider1.setMajorTickSpacing(10);
+        jSlider1.setMinorTickSpacing(5);
+        jSlider1.setPaintLabels(true);
+        jSlider1.setPaintTicks(true);
+        jSlider1.setSnapToTicks(true);
+        jSlider1.setValue(70);
+        jSlider1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jSlider1.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                jSlider1StateChanged(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
+        jPanel10.setLayout(jPanel10Layout);
+        jPanel10Layout.setHorizontalGroup(
+            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel10Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jSlider1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanel10Layout.setVerticalGroup(
+            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel10Layout.createSequentialGroup()
+                .addContainerGap(16, Short.MAX_VALUE)
+                .addComponent(jSlider1, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jTabbedPane2)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(log, javax.swing.GroupLayout.PREFERRED_SIZE, 377, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
+            .addComponent(jTabbedPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 447, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(log, javax.swing.GroupLayout.PREFERRED_SIZE, 327, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(9, 9, 9)
-                .addComponent(jTabbedPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 285, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(49, 49, 49)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addComponent(jTabbedPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(25, 25, 25)
+                .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane2)
-                    .addComponent(log, javax.swing.GroupLayout.DEFAULT_SIZE, 235, Short.MAX_VALUE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(log, javax.swing.GroupLayout.DEFAULT_SIZE, 236, Short.MAX_VALUE)))
+        );
+
+        jPanelCLR.setBackground(Constants.colorNOTSELECTED);
+
+        jrLHEAL.setBackground(Constants.colorNOTSELECTED);
+        jrLHEAL.setForeground(new java.awt.Color(0, 0, 0));
+        jrLHEAL.setText("LHEAL");
+        jrLHEAL.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        jrLHEAL.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                jrLHEALStateChanged(evt);
+            }
+        });
+        jrLHEAL.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jrLHEALActionPerformed(evt);
+            }
+        });
+
+        jrCHAIN.setBackground(Constants.colorNOTSELECTED);
+        jrCHAIN.setForeground(new java.awt.Color(0, 0, 0));
+        jrCHAIN.setText("CHAIN");
+        jrCHAIN.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        jrCHAIN.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jrCHAINActionPerformed(evt);
+            }
+        });
+
+        jCheckSIT.setBackground(Constants.colorNOTSELECTED);
+        jCheckSIT.setForeground(new java.awt.Color(0, 0, 0));
+        jCheckSIT.setSelected(true);
+        jCheckSIT.setText("SIT");
+        jCheckSIT.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
+        jCheckSIT.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckSITActionPerformed(evt);
+            }
+        });
+
+        jTextOrder.setText("111");
+        jTextOrder.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jTextOrder.setSelectionStart(5);
+
+        jSlowed.setText("SLOW");
+        jSlowed.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                jSlowedStateChanged(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanelCLRLayout = new javax.swing.GroupLayout(jPanelCLR);
+        jPanelCLR.setLayout(jPanelCLRLayout);
+        jPanelCLRLayout.setHorizontalGroup(
+            jPanelCLRLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelCLRLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanelCLRLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelCLRLayout.createSequentialGroup()
+                        .addComponent(jrLHEAL)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 21, Short.MAX_VALUE)
+                        .addComponent(jCheckSIT))
+                    .addGroup(jPanelCLRLayout.createSequentialGroup()
+                        .addGroup(jPanelCLRLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanelCLRLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(jTextOrder, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jrCHAIN))
+                            .addComponent(jSlowed))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        jPanelCLRLayout.setVerticalGroup(
+            jPanelCLRLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelCLRLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanelCLRLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jCheckSIT)
+                    .addComponent(jrLHEAL))
+                .addGap(42, 42, 42)
+                .addComponent(jrCHAIN)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextOrder, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jSlowed)
+                .addContainerGap(80, Short.MAX_VALUE))
+        );
+
+        jPanelNEC.setBackground(Constants.colorNOTSELECTED);
+        jPanelNEC.setPreferredSize(new java.awt.Dimension(146, 238));
+
+        jCheckSIT1.setBackground(Constants.colorNOTSELECTED);
+        jCheckSIT1.setForeground(new java.awt.Color(0, 0, 0));
+        jCheckSIT1.setSelected(true);
+        jCheckSIT1.setText("SIT");
+        jCheckSIT1.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
+        jCheckSIT1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckSIT1ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanelNECLayout = new javax.swing.GroupLayout(jPanelNEC);
+        jPanelNEC.setLayout(jPanelNECLayout);
+        jPanelNECLayout.setHorizontalGroup(
+            jPanelNECLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelNECLayout.createSequentialGroup()
+                .addGap(29, 29, 29)
+                .addComponent(jCheckSIT1)
+                .addContainerGap(71, Short.MAX_VALUE))
+        );
+        jPanelNECLayout.setVerticalGroup(
+            jPanelNECLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelNECLayout.createSequentialGroup()
+                .addContainerGap(179, Short.MAX_VALUE)
+                .addComponent(jCheckSIT1)
+                .addGap(35, 35, 35))
+        );
+
+        jPanelBRD.setBackground(Constants.colorNOTSELECTED);
+
+        jrKITE.setBackground(Constants.colorNOTSELECTED);
+        jrKITE.setForeground(new java.awt.Color(0, 0, 0));
+        jrKITE.setText("KITE");
+        jrKITE.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        jrKITE.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                jrKITEStateChanged(evt);
+            }
+        });
+        jrKITE.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jrKITEActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanelBRDLayout = new javax.swing.GroupLayout(jPanelBRD);
+        jPanelBRD.setLayout(jPanelBRDLayout);
+        jPanelBRDLayout.setHorizontalGroup(
+            jPanelBRDLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelBRDLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jrKITE)
+                .addContainerGap(73, Short.MAX_VALUE))
+        );
+        jPanelBRDLayout.setVerticalGroup(
+            jPanelBRDLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelBRDLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jrKITE)
+                .addContainerGap(206, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -462,12 +736,30 @@ public class NewJFrame extends JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 471, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 6, Short.MAX_VALUE))
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 451, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jPanelCLR, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(27, 27, 27)
+                        .addComponent(jPanelNEC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(23, 23, 23))
+                    .addGroup(layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jPanelBRD, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 592, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 626, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanelCLR, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanelNEC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(44, 44, 44)
+                .addComponent(jPanelBRD, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -483,23 +775,38 @@ public class NewJFrame extends JFrame {
 
     private void jtbLocate1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtbLocate1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jtbLocate1ActionPerformed
+        Boolean selected = jtbLocate1.isSelected();
+        Boolean empty = jTextLocation1.getText().isEmpty();
 
-    private void jtbLocate1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jtbLocate1StateChanged
-        // TODO add your handling code here:
-        if(jtbLocate1.isSelected()){
+        if((selected && empty) || !selected) {
+            jtbLocate1.setText("OFF");
+            Constants.bSeek = false;
+            
+            if (empty) {
+                setTextArea("location field empty!!");
+            }
+        }
+        
+        if (selected && !empty) {
             jtbLocate1.setText("ON");
             Constants.location = jTextLocation1.getText().split(",(\\s)?");
                     log.append("Location: " + 
                             Constants.location[0] + ", " 
                             + Constants.location[1] + "\n");
             Constants.bSeek = true;
-
-            
-        } else {
-            jtbLocate1.setText("OFF");
-            Constants.bSeek = false;
         }
+        
+    }//GEN-LAST:event_jtbLocate1ActionPerformed
+
+    private void jtbLocate1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jtbLocate1StateChanged
+        // TODO add your handling code here:
+        Boolean selected = jtbLocate1.isSelected();
+        Boolean empty = jTextLocation1.getText().isEmpty();
+        
+        if (selected && !empty) {
+            jtbLocate1.setText("ON");
+        }
+           
     }//GEN-LAST:event_jtbLocate1StateChanged
 
     private void jTextLocation1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextLocation1MouseClicked
@@ -522,10 +829,14 @@ public class NewJFrame extends JFrame {
     private void jSlider1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSlider1StateChanged
         // TODO add your handling code here:
         JSlider source = (JSlider)evt.getSource();
+        int sliderval = (int)source.getValue();
+        int lower = Math.max(sliderval-25,25);
+        int upper = Math.max(sliderval+15,90);
 
         if (!source.getValueIsAdjusting()) {
             log.append("Upper limit set to " + (int)source.getValue() +"%"+ "\n");
-            sliderval = (int)source.getValue();
+//            log.append(String.format("[%.2f, %.2f]%n",upper, lower));
+            Constants.sliderval = (int)source.getValue();
         }
         /*
         int fps = (int)source.getValue();
@@ -541,33 +852,66 @@ public class NewJFrame extends JFrame {
         }*/
     }//GEN-LAST:event_jSlider1StateChanged
 
-    private void jrCHAINActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrCHAINActionPerformed
-        // TODO add your handling code here:
-        Constants.clr.chainSelected(jrCHAIN.isSelected());
-        log.append("Chain " + jrCHAIN.isSelected() + "\n");
-    }//GEN-LAST:event_jrCHAINActionPerformed
+    private void jrSeikeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrSeikeActionPerformed
 
-    private void jCheckSITActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckSITActionPerformed
-        // TODO add your handling code here:
-        Constants.clr.sitSelected(jCheckSIT.isSelected());
-    }//GEN-LAST:event_jCheckSITActionPerformed
+        if(jrSeike.isSelected())
+        {
+            card.show(jPanel, "NEC");
+            clearNotSelected(jrSeike);
+            isON = true;
+            try {
+                initializeReader(jrSeike);
+            } catch (FileNotFoundException ex) {
+                Logger.getLogger(NewJFrame.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        } else {
+            isON = false;
+            jrSaax.setBackground(Constants.colorNOTSELECTED);
+            if(Constants.reader != null)
+            try {
+                Constants.reader.close();
+            } catch (IOException ex) {
+                Logger.getLogger(NewJFrame.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+    }//GEN-LAST:event_jrSeikeActionPerformed
 
-    private void jSlowedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jSlowedActionPerformed
+    private void jrSeikeStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jrSeikeStateChanged
         // TODO add your handling code here:
-        Constants.clr.isSlowed(jSlowed.isSelected());
-    }//GEN-LAST:event_jSlowedActionPerformed
+    }//GEN-LAST:event_jrSeikeStateChanged
+
+    private void jrLeukeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrLeukeActionPerformed
+        // TODO add your handling code here:
+        if(jrLeuke.isSelected()){
+            isON = true;
+            card.show(jPanel, "BLANK");
+            clearNotSelected(jrLeuke);
+            try {
+                initializeReader(jrLeuke);
+            } catch (FileNotFoundException ex) {
+                Logger.getLogger(NewJFrame.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        } else {
+            jrLeuke.setBackground(Constants.colorNOTSELECTED);
+            isON = false;
+            if(Constants.reader != null)
+            try {
+                Constants.reader.close();
+            } catch (IOException ex) {
+                Logger.getLogger(NewJFrame.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+    }//GEN-LAST:event_jrLeukeActionPerformed
 
     private void jrMorleyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrMorleyActionPerformed
         // TODO add your handling code here:
         if(jrMorley.isSelected())
         {
+            card.show(jPanel, "CLR");
+            clearNotSelected(jrMorley);
+            isON = true;
             try {
-                isON = true;
-                jrMorley.setBackground(Constants.colorSELECTED);
-
-                Constants.charname = jrMorley.getText();
-                Constants.updateFilename();
-                Constants.reader = new BufferedReader(new FileReader(Constants.filename));
+                initializeReader(jrMorley);
             } catch (FileNotFoundException ex) {
                 Logger.getLogger(NewJFrame.class.getName()).log(Level.SEVERE, null, ex);
             }
@@ -575,14 +919,141 @@ public class NewJFrame extends JFrame {
             jrMorley.setBackground(Constants.colorNOTSELECTED);
             isON = false;
             if(Constants.reader != null)
-            Constants.reader.close();
+            try {
+                Constants.reader.close();
+            } catch (IOException ex) {
+                Logger.getLogger(NewJFrame.class.getName()).log(Level.SEVERE, null, ex);
+            }
         }
     }//GEN-LAST:event_jrMorleyActionPerformed
+
+    private void jCheckSIT1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckSIT1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckSIT1ActionPerformed
+
+    private void jCheckSITActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckSITActionPerformed
+        // TODO add your handling code here:
+        Constants.clr.sitSelected(jCheckSIT.isSelected());
+    }//GEN-LAST:event_jCheckSITActionPerformed
+
+    private void jrCHAINActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrCHAINActionPerformed
+        // TODO add your handling code here:
+        Constants.clr.chainSelected(jrCHAIN.isSelected());
+        Constants.CHorder = jTextOrder.getText().trim();
+        log.append("Chain " + jrCHAIN.isSelected() + "  Order: " + Constants.CHorder + "\n");
+    }//GEN-LAST:event_jrCHAINActionPerformed
+
+    private void jrLHEALActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrLHEALActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jrLHEALActionPerformed
+
+    private void jrLHEALStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jrLHEALStateChanged
+        // TODO add your handling code here:
+        if(jrLHEAL.isSelected())
+        Constants.clr.setSpell(Cleric.spellName.CE, true);
+        else
+        Constants.clr.setSpell(Cleric.spellName.CE, false);
+    }//GEN-LAST:event_jrLHEALStateChanged
+
+    private void jrSaaxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrSaaxActionPerformed
+        // TODO add your handling code here:
+                // TODO add your handling code here:
+        JRadioButton button = jrSaax;
+        if(button.isSelected())
+        {
+            isON = true;
+            clearNotSelected(button);
+            initializePanel(button);
+            try {
+                initializeReader(button);
+            } catch (FileNotFoundException ex) {
+                Logger.getLogger(NewJFrame.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        } else {
+            button.setBackground(Constants.colorNOTSELECTED);
+            isON = false;
+            if(Constants.reader != null)
+            try {
+                Constants.reader.close();
+            } catch (IOException ex) {
+                Logger.getLogger(NewJFrame.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+    }//GEN-LAST:event_jrSaaxActionPerformed
+
+    private void jrSaaxStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jrSaaxStateChanged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jrSaaxStateChanged
+
+    private void jrKITEStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jrKITEStateChanged
+        // TODO add your handling code here:
+        Bard bard = Bard.getInstance();
+        try {
+            bard.kite(jrKITE.isSelected());
+        } catch (AWTException ex) {
+            Logger.getLogger(NewJFrame.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jrKITEStateChanged
+
+    private void jrKITEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrKITEActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jrKITEActionPerformed
+
+    private void jSlowedStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSlowedStateChanged
+        // TODO add your handling code here:
+        if(jSlowed.isSelected())
+            Constants.clr.setSlowed(true);
+        else
+            Constants.clr.setSlowed(false);
+    }//GEN-LAST:event_jSlowedStateChanged
     
     
     public void setTextArea(String s)
     {
         log.append(s+ "\n");
+    }
+    
+    public void initializePanel(JRadioButton button)
+    {
+        String name = button.getText();
+        switch(name){
+            case("Morley"):
+                card.show(jPanel, "CLR");
+                break;
+            case("Seike"):
+                card.show(jPanel,"NEC");
+                break;
+            case("Leuke"):
+                card.show(jPanel, "BLANK");
+                break;
+            case("Saax"):
+                card.show(jPanel,"BRD");
+                break;      
+        }
+    }
+    
+    public void clearNotSelected(JRadioButton button)
+    {
+        Iterator it = radioButtons.listIterator();
+        button.setBackground(Constants.colorSELECTED);
+
+        JRadioButton selected = null;
+            while(it.hasNext()){
+                selected = (JRadioButton)it.next();
+                if(!selected.equals(button))
+                {
+                    selected.setSelected(false);
+                    selected.setBackground(Constants.colorNOTSELECTED);
+                }
+            }
+    }
+    
+    public void initializeReader(JRadioButton button) throws FileNotFoundException
+    {
+        Constants.charname = button.getText();
+        Constants.updateFilename();
+        Constants.updateFilename();
+        Constants.reader = new BufferedReader(new FileReader(Constants.filename));
     }
     
     public void inTextStream(String s)
@@ -643,13 +1114,20 @@ public class NewJFrame extends JFrame {
     private javax.swing.ButtonGroup buttonGroup3;
     private javax.swing.Box.Filler filler1;
     private javax.swing.Box.Filler filler2;
+    private javax.swing.Box.Filler filler3;
     private javax.swing.JCheckBox jCheckSIT;
+    private javax.swing.JCheckBox jCheckSIT1;
     private javax.swing.JFileChooser jFileChooser1;
+    private javax.swing.JFrame jFrame1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenu jMenu3;
+    private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JPanel jPanel;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
@@ -657,7 +1135,10 @@ public class NewJFrame extends JFrame {
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
-    private javax.swing.JPanel jPanel9;
+    private javax.swing.JPanel jPanelBRD;
+    private javax.swing.JPanel jPanelCLR;
+    private javax.swing.JPanel jPanelNEC;
+    private javax.swing.JPopupMenu jPopupMenu1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JSlider jSlider1;
@@ -666,15 +1147,25 @@ public class NewJFrame extends JFrame {
     private javax.swing.JTextField jTextField;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextLocation1;
+    private javax.swing.JTextField jTextOrder;
     private javax.swing.JTextPane jTextPane1;
     private javax.swing.JTree jTree1;
     private javax.swing.JButton jbCapture;
     private javax.swing.JButton jbOpen1;
     private javax.swing.JCheckBox jrCHAIN;
+    private javax.swing.JCheckBox jrKITE;
+    private javax.swing.JCheckBox jrLHEAL;
+    private javax.swing.JRadioButton jrLeuke;
     private javax.swing.JRadioButton jrMorley;
+    private javax.swing.JRadioButton jrSaax;
+    private javax.swing.JRadioButton jrSeike;
     private javax.swing.JToggleButton jtbLocate1;
     private java.awt.TextArea log;
     // End of variables declaration//GEN-END:variables
+
+    private void showMessageDialog(String location_empty) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
 
 class ScreenCaptureRectangle {

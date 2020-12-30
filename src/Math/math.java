@@ -20,10 +20,10 @@ import javax.imageio.ImageIO;
 public class math {
     ArrayList <Double> marks;
     double avg = 0.0;
-    int x0 = 11;
-    int N = 13;
-    double r = 1.05;
-    double p = 1;
+    int x0 = 5;
+    int N = 7;
+    double r = 0.20;
+    double p = 2;
     
     public math(){
             marks  = new ArrayList();
@@ -64,11 +64,11 @@ public class math {
         {
             double w =  logfun(k--);
 
-            
+            /*
             System.out.println("k: "+k+
                     " w: " + w +
                     " x: " + mark);
-
+            */
             sumw = sumw+w;
             
             sum += w*mark;
@@ -89,17 +89,19 @@ public class math {
         }
         return Math.sqrt(sum.doubleValue()/sumw); //marks.size();          
     }
+    
 
     public double calcP(File A, File B)
     {
         BufferedImage imgA = null; 
         BufferedImage imgB = null; 
-        double percentage = 0;
+        double p = 0;
         
         try
         {       
             // Populates the array with names of files and directories
             imgA = ImageIO.read(A);
+           // imgA = ImageIO.read(new File("D:\\Documents\\COURSES\\Software\\ImageComparison\\fullhp.jpg"));
             //    Image imA = imgA.getScaledInstance(20, 20, Image.SCALE_DEFAULT);
             imgB = ImageIO.read(B);
             //    imgB = (BufferedImage) imgB.getScaledInstance(20, 20, Image.SCALE_DEFAULT);
@@ -141,12 +143,33 @@ public class math {
             double total_pixels = width1 * height1 * 3; 
   
             // Normalizing the value of different pixels 
-            double avg_different_pixels = difference / total_pixels; 
+            double avg_different_pixels = difference/ total_pixels; 
   
             // There are 255 values of pixels in total 
-            percentage = (avg_different_pixels / 255) * 100; 
+            p = (avg_different_pixels / 255) * 100; 
+           // double[] args = {0.1385,-2.73,4.4473,101.15};
+          // double[] args = {.12272,-2.39634,2.32323,104.074};
+          //  p = fun(p, args);
+                  
+                   
+                 //bwt 5, 8 
+            //
+                    
+                   // percentage = 100*Math.abs(percentage-14.11)/14.11;
+            //dead 14.11
         }
-        return round(percentage,4);            
+        return round(p,4);            
+    }
+    
+    public double fun(double x, double[] args)
+    {
+        double y = 0.0;
+        int n = args.length;
+        for(int i=n; i>0; i--)
+        {
+            y += args[n-i]*Math.pow(x, i-1);
+        }
+        return y;
     }
     
 }
