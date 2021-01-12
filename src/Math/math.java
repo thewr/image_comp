@@ -64,11 +64,11 @@ public class math {
         {
             double w =  logfun(k--);
 
-            /*
+            
             System.out.println("k: "+k+
                     " w: " + w +
                     " x: " + mark);
-            */
+            
             sumw = sumw+w;
             
             sum += w*mark;
@@ -91,7 +91,7 @@ public class math {
     }
     
 
-    public double calcP(File A, File B)
+    public double calcP(File A, File B, String fit)
     {
         BufferedImage imgA = null; 
         BufferedImage imgB = null; 
@@ -100,16 +100,18 @@ public class math {
         try
         {       
             // Populates the array with names of files and directories
-            imgA = ImageIO.read(A);
-           // imgA = ImageIO.read(new File("D:\\Documents\\COURSES\\Software\\ImageComparison\\fullhp.jpg"));
-            //    Image imA = imgA.getScaledInstance(20, 20, Image.SCALE_DEFAULT);
+            if(fit.equals("fit")) {
+                imgA = ImageIO.read(new File("D:\\Documents\\COURSES\\Software\\ImageComparison\\fullhp.jpg"));
+            } else {
+                 imgA = ImageIO.read(A);
+            }
             imgB = ImageIO.read(B);
-            //    imgB = (BufferedImage) imgB.getScaledInstance(20, 20, Image.SCALE_DEFAULT);
         } 
         catch (IOException e) 
         { 
             System.out.println(e); 
         } 
+        
         int width1 = imgA.getWidth(); 
         int width2 = imgB.getWidth(); 
         int height1 = imgA.getHeight(); 
@@ -147,16 +149,11 @@ public class math {
   
             // There are 255 values of pixels in total 
             p = (avg_different_pixels / 255) * 100; 
-           // double[] args = {0.1385,-2.73,4.4473,101.15};
-          // double[] args = {.12272,-2.39634,2.32323,104.074};
-          //  p = fun(p, args);
-                  
-                   
-                 //bwt 5, 8 
-            //
-                    
-                   // percentage = 100*Math.abs(percentage-14.11)/14.11;
-            //dead 14.11
+            double[] args = {0.1385,-2.73,4.4473,101.15};
+            if(fit.equals("fit"))
+            {
+                p = fun(p, args);
+            }
         }
         return round(p,4);            
     }

@@ -20,45 +20,43 @@ import java.io.IOException;
 import java.text.ParseException;
 import java.util.Random;
 import javax.imageio.ImageIO;
+import javax.swing.JFrame;
 
 
-class Record extends TimerTask
+class JLogger extends TimerTask
 {
-    NewJFrame frame;
-    FileManage fm = new FileManage();
+    ClickThrough frame;
+    FileManage fileManager = new FileManage();
     
-    Record(NewJFrame frame)
+    JLogger(ClickThrough frame)
     {
         this.frame = frame;
     }
     
+    
     public void run()
     {
-        
+        if(!frame.isButtonSelected()) return;
         try {
-            if(!frame.isON)
-                return;
-            fm.scanFile();
-
+            fileManager.scanFile();
         } catch (IOException ex) {
-            Logger.getLogger(Record.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(JLogger.class.getName()).log(Level.SEVERE, null, ex);
         } catch (ParseException ex) {
-            Logger.getLogger(Record.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(JLogger.class.getName()).log(Level.SEVERE, null, ex);
         } catch (AWTException ex) {
-            Logger.getLogger(Record.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(JLogger.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
     }
-    
 }
+
 
 
 class Helper extends TimerTask 
 {
-    NewJFrame frame;
+    ClickThrough frame;
     FileManage fm = new FileManage();
 
-    Helper(NewJFrame frame)
+    Helper(ClickThrough frame)
     {
         this.frame = frame;
     }
@@ -78,24 +76,6 @@ class Helper extends TimerTask
         ImageIO.write(Image, "jpg", new File(path+"\\Screenshots\\"+filename));
     }
     
-    public void killMob(Robot r) throws InterruptedException {
-        Thread.sleep(2000);
-
-        r.keyPress(KeyEvent.VK_M);
-        r.keyRelease(KeyEvent.VK_M);
-        Thread.sleep(1000);
-        r.keyPress(KeyEvent.VK_G);
-        r.keyRelease(KeyEvent.VK_G);
-        Thread.sleep(7000);
-        r.keyPress(KeyEvent.VK_F);
-        r.keyRelease(KeyEvent.VK_F);
-        Thread.sleep(7000);
-        r.keyPress(KeyEvent.VK_V);
-        r.keyRelease(KeyEvent.VK_V);
-        Thread.sleep(7000);
-       // r.keyRelease(KeyEvent.VK_X);
-    }
-    
     public void lodiTrigger(Robot r) throws InterruptedException
     {
         for(int i = 0; i<3; i++) {
@@ -107,61 +87,53 @@ class Helper extends TimerTask
     
     public void run()
     {    
-        File fileA = null;
-        File fileB = null;
+
         Cleric CLR = Constants.clr; 
 
         try{   
-
-            if(!frame.isON)
-                return;
             
-            Robot robot = new Robot(); 
-            
+            if(!frame.getSlider().isEnabled())
+            {
+               return;
+            }
+            Robot robot = new Robot();
+                        
             capture(robot);
             
-            File dir_current = fm.getLastModifiedDir(path);
+            File[] fileAB = fm.getFiles(path);
+            
+            
+            double percent = mt.calcP(fileAB[0], fileAB[1], "fit");     
+            double upper = Math.min(Constants.sliderval+15,70);   
+            double lower = Math.max(Constants.sliderval-30,40);
 
-            // Populates the array with names of files and directories
-            String[] captured = (new File(dir_current.toString())).list();
-            fileB = fm.getLastModifiedFile(dir_current.toString());
-            for(String cap:captured)
-            {                    
-                String comp = dir_current.toString()+"\\"+cap;
-                if ((fileA != null)&&(comp.equals(fileB.toString())))
-                    break;
-                
-                if(!cap.contains("mp4"))
-                {
-                    fileA = new File(dir_current.toString()+"\\"+cap); 
+            
+            frame.inTextStream(String.format("%.0f", percent));
+            
+            //if(Constants.clr.isSelected()){
+                if(CLR.CHchain(percent)) {
+                    /*CHCHAIN*/
                 }
-            }
+                
+                if(CLR.LHEALS(percent)) {
+                    /*LHEALS*/
+                }
+                
+                if (CLR.isCH())
+                {
+                    if((percent > upper)&&(percent < 80)||(percent<lower)){
+                        CLR.Lheal('v');
+                    } else if (percent <= Constants.sliderval) {
+                        CLR.CHheal();
+                    }
+                }
+                
+            //}
             
-            double percent = mt.calcP(fileA,fileB);
-            
-           // double avg =  mt.calculateAverage(percent);
-            //double std = mt.calculateSTD();
-            //System.out.println(list.calculateSTD());
-           // double cutoff = avg;
-            double upper = Math.min(Constants.sliderval+15,85);   
-            double lower = Math.max(Constants.sliderval-15,25);
-
-            
-            frame.inTextStream(String.format("%.2f", percent));
-            //System.out.println(String.format("cut:  %.2f  calc:  %.2f",cutoff, percent));
-            //System.out.println(String.format("avg:  %.2f  std:  %.2f",avg, std));
-            //System.out.println("CHAIN IS " + CLR.CHchain(percent));
-            
-            if(CLR.CHchain(percent)){/*CH CHAIN*/} 
-            else if ((percent > upper)&&(percent<90)){
-                CLR.Lheal('y');
-            } else if (percent <= Constants.sliderval){ //&& (percent > lower)) {
-               CLR.CHheal();
-            }
            // } else {
            // } 
             
-            fm.purgeLogFiles(dir_current);
+            fm.purgeLogFiles(path);
 
         } catch(AWTException e){
         e.printStackTrace();
@@ -177,7 +149,7 @@ public class Main
 { 
     protected static Main obj;
     public static BufferedReader reader;
-    public static NewJFrame frame;
+    public static ClickThrough frame;
     
     
     public static void main(String[] args) throws InterruptedException, FileNotFoundException 
@@ -185,24 +157,35 @@ public class Main
         obj = new Main();
         Date date = new Date();
         Timer timer = new Timer();
-        frame = new NewJFrame();
-        
-        
+        JFrame.setDefaultLookAndFeelDecorated(true);
+
+        frame = new ClickThrough();//NewJFrame();
+        // Set the window to 55% opaque (45% translucent).
+
       
        // reader = new BufferedReader(new FileReader(filename));
 
         
        // timer.scheduleAtFixedRate(new Helper(frame),date,1000);
-        timer.scheduleAtFixedRate(new Helper(frame),date,1000);
-        timer.scheduleAtFixedRate(new Record(frame),date,2000);
+        timer.scheduleAtFixedRate(new Helper(frame),date,700);
+        timer.scheduleAtFixedRate(new JLogger(frame),date,1000);
         
         System.out.println("Timer running");  
-                /* Create and display the form */
+        /* Create and display the form */
+        
+
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
+                // Set the window to 55% opaque (45% translucent).
+                frame.setOpacity(0.60f);
+
+                // Display the window.
                 frame.setVisible(true);
             }
         });
+        
+        
+        
         synchronized(obj)
         {
             obj.wait();

@@ -72,8 +72,8 @@ public class Time {
         Date current = new Date();
        
         long tMins = getMinutes(current, recorded);
-        
-        if ((tMins > mins)){
+        long tSeconds = tMins*60;
+        if ((tSeconds > mins)){
             return true;
         }
         else{ 

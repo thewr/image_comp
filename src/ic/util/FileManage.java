@@ -6,7 +6,6 @@
 package ic.util;
 
 import java.awt.AWTException;
-import java.awt.Robot;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
@@ -14,7 +13,6 @@ import java.text.ParseException;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.HashMap;
-import java.util.LinkedList;
 
 
 /**
@@ -24,8 +22,7 @@ import java.util.LinkedList;
 public class FileManage {
     static HashMap<String, String> players;
     BufferedReader reader;
-    private static LinkedList<String[]> que = new LinkedList<>();
-    
+    Vehicle vehicle;
     public FileManage(){
     }
 
@@ -58,8 +55,11 @@ public class FileManage {
     return chosenFile;
     }
     
-    public void purgeLogFiles(File logDir){
+    public void purgeLogFiles(String path){
+        File logDir = getLastModifiedDir(path);
+
         File[] logFiles = logDir.listFiles();
+        
         long oldestDate = Long.MAX_VALUE;
         File oldestFile = null;
         if( logFiles != null && logFiles.length >10){
@@ -77,12 +77,29 @@ public class FileManage {
         }
     }
     
-    public static void scanFile() throws IOException, ParseException, AWTException {
-        // scan lines
-        //String last = "";
-        //String last = FizzBuzzProcessor.last;
-        
+    public File[] getFiles(String path){
+        File[] files = {null,null};
+        File dir_current = getLastModifiedDir(path);
+
+        // Populates the array with names of files and directories
+        String[] captured = (new File(dir_current.toString())).list();
+        files[1] = getLastModifiedFile(dir_current.toString());
+        for(String cap:captured)
+        {                    
+            String comp = dir_current.toString()+"\\"+cap;
+            if ((files[0] != null)&&(comp.equals(files[1].toString())))
+                break;
+                
+                if(!cap.contains("mp4"))
+                {
+                    files[0] = new File(dir_current.toString()+"\\"+cap); 
+                }
+        }
+        return files;    
+    }
     
+    public static void scanFile() throws IOException, ParseException, AWTException {
+        
         Time time = Time.getInstance();
         
         //System.out.println("------------ scanning file -------------");
@@ -91,247 +108,80 @@ public class FileManage {
         String current;
         while ((current = Constants.reader.readLine()) != null) {
 
+            //bad timestamp ~ log issue
             if (tsLen > current.length()+1) 
                 continue;
             
+            String line = null;
+/*
+            if (Constants._fileLen < Constants._filePointer) {
+                Constants._filePointer = Constants._fileLen;
+            } else if (Constants._fileLen > Constants._filePointer) {
+                RandomAccessFile raf = new RandomAccessFile(Constants.filename, "r");   
+                raf.seek(Constants._filePointer);
+                while ((line = raf.readLine()) != null){}
+                Constants._filePointer = raf.getFilePointer();
+                raf.close();  
+            }
+            */
+
             Message message = Message.getInstance();
             message.load(current); 
             String timestamp = message.getTimestamp();
           
             //if(!time.isNow(timestamp))
             //    continue;
-            
-            String line = message.get();
 
-            if(time.isPast(timestamp, 1))
-               continue;
+            if(time.isPast(timestamp, 5)) continue;
             
-            Robot robot = new Robot();
+            line = message.getText();
 
-            if(Constants.bSeek){
-                Seek.getInstance().direction(line, timestamp);
+            if(Constants.bSeek) {
+                //System.out.println("Seeking target ... " + line);
+                Seek.getInstance().direction(message.getFull(), timestamp);
             }
-
-
-            if(!(line.contains("tells")|line.contains("says")|line.contains("say"))){ continue;}
-
-            //System.out.println(timestamp + "  " + message.getText());
-            //String player = message.getPlayer();
             
+           // testing regex ........ //
+           /* String regex = "111 NExt";
+              String regex3 = "^(\\d)\\1{2}\\b";
+              System.out.println("Current order set: " + Constants.CHorder);
+              System.out.println(regex.toUpperCase());
+           */
+            //line = line.trim();
             System.out.println(line);
 
-            if(message.getText().matches(Constants.CHorder +"  NEXT")){
+            /*
+            if(line.matches("You have entered [A-Z][a-z]+.*\\."))
+            {
+                System.out.println(line.split("entered",2)[1].trim());
+            }
+            */
+
+            String[] keys = {"shouts", "tells","says","character","say","auctions"};
+            if(message.hasContent(keys)){ 
+                line = message.getContent();
+            } else {
+                continue;
+            }
+            
+
+            
+            //System.out.println(line);
+            //line = line.trim();
+            
+            if((line.startsWith(Constants.CHorder) && line.toUpperCase().endsWith("NEXT"))
+                    ||(line.toUpperCase().startsWith("NEXT") && line.endsWith(Constants.CHorder)))
+            {
                 Constants.clr.setStartChain(true);      
+                System.out.println(Constants.clr.isCHAIN() + " | " + Constants.clr.bStart + " | " + Constants.clr.bSlowed);
             }
             
-           if(message.getText().matches("^(SHM SLOW).*$")){
-               System.out.println("SLOWED!!");
-          //     Constants.clr.setSlowed(true);      
-            }
-            
-            
-                        
-            //Constants.clr.setStartChain(false);      
-            
-         //   Constants.lastLine = current;
-
-
         }
        // reader.close();
     }
-    
-    
-    
-    
-    public static void direction(String line, String timestamp) throws AWTException, ParseException {
-        
-        Robot robot = new Robot();
-
-        if(line.contains("Your Location is ")){
-                String[] coords = (line.split("Your Location is ")[1])
-                        .split(", ");
-                //System.out.println(coords[0] + "  " + coords[1] + "  " + coords[2]);
-                coords[2] = timestamp;
-                que.add(coords);
-                
-                
-
-                if(que.size()>2){
-                        que.remove();
-                        
-                        String[] c0 =que.get(0); //previous
-                        String[] c1 = que.get(1);  //recent
-                        
-                        double a = getAngle(c0,c1);
-                        if (a < 0) a += 360;
-                        
-                        
-                        //String[] desired_location ={"2324","-990"};
-                        double c = getAngle(Constants.location,c1);
-                        if (c < 0) c += 360;
-                        
-                        double desiredAngle = c - a;
-                        // Compute its acute counterpart
-                        if (desiredAngle > 180)
-                            desiredAngle -= 360;
-                        else if (desiredAngle < -180)
-                            desiredAngle += 360;
-                        
-                        // Advance the monster towards player by a predefined value
-                        a += Math.min(3, Math.abs(desiredAngle)) * Math.signum(desiredAngle);
-                        
-                        // Convert this angle back in the -180 to 180 degree range
-                        if (a > 180) a -= 360;
-                        else if (a < -180) a += 360;
-                        //monster.setAngle(a);
-                        
-                        
-                        //
-                        //double distance = getDistance(c0,c1);
-                       
-                            
-                        //long delta_t = Time.getInstance().getDiff(c0[2], c1[2]);
-                       // double rate = distance/(double)(delta_t/1000);
-                        
-                        
-                       // System.out.println("Distance: " + distance);
-                        //
-                        double distance1 = getDistance(Constants.location,c1);
-                        double distance2 = getDistance(Constants.location, c0);
-                        double diff = distance1-distance2;
-                        
-                        int x = 7* (int) Math.round(Math.abs(desiredAngle/6));
-       
-                        
-                        if(distance1<50){
-                            robot.keyPress(Character.toUpperCase('S'));
-                            robot.keyRelease(Character.toUpperCase('S'));
-                        }
-                            
-   
-                        
-                        System.out.println("\n"+"Distance: " + distance1);
-                        System.out.println("Change Angle: " + x/7);
-                        System.out.println("Desired Angle: " + desiredAngle);
-                        System.out.println(String.format("Distance: %f \n, "
-                                + "Changle Angle: %f", c1, x/7));
-                        
-                       // System.out.println("Delay: " + x);
-                            // Convert this angle back in the -180 to 180 degree range
-                            robot.keyPress(Character.toUpperCase('1'));
-                            if(desiredAngle<0){
-                                robot.keyPress(Character.toUpperCase('d'));
-                                robot.delay(x);
-                                robot.keyRelease(Character.toUpperCase('d'));
-                            } else if (desiredAngle>0) {
-                                robot.keyPress(Character.toUpperCase('a'));
-                                robot.delay(x);
-                                robot.keyRelease(Character.toUpperCase('a'));
-                            }
-                  
-                            //System.out.println(a + "  " + c + "  " + desiredAngle);  
-                }
-        }           
-    }
-        public static double getAngle(String[] c0, String[] c1)
-        {
-            double[] prev = {Double.parseDouble(c0[0]),
-                            Double.parseDouble(c0[1])};
-            double[] curr = {Double.parseDouble(c1[0]),
-                            Double.parseDouble(c1[1])};
-            double[] diff = {curr[0]-prev[0], curr[1]-prev[1]};
-            //System.out.println("Vector: " + "< " + diff[1] + ", " + diff[0] + " >");
-            double ang = (180/Math.PI)*Math.atan2(diff[0],diff[1]);    
-            //(x > 0 ? x : (2*PI + x)) * 360 / (2*PI)
-           // ang = (ang + 360) % 360;  // +360 for implementations where mod returns negative numbers
-            return ang;
-      
-        }
-        
-        public static double getDistance(String[] c0, String[] c1)
-        {
-            double[] prev = {Double.parseDouble(c0[0]),
-                            Double.parseDouble(c0[1])};
-            double[] curr = {Double.parseDouble(c1[0]),
-                            Double.parseDouble(c1[1])};
-            double distance = Math.sqrt(Math.pow(curr[0]-prev[0],2.0)+Math.pow(curr[1]-prev[1],2.0));
-            return distance;
-
-        }
-
 }
-
-
-           /*
-                        if(line.contains("Your Location is ")){
-                String[] coords = (line.split("Your Location is ")[1])
-                        .split(", ");
-                //System.out.println(coords[0] + "  " + coords[1] + "  " + coords[2]);
-                que.add(coords);
-                if(que.size()>=3){
-                        que.remove();
-                        String[] c0 =que.get(0); //previous
-                        String[] c1 = que.get(1);  //recent
-
-                        double[] prev = {Double.parseDouble(c0[0]),
-                            Double.parseDouble(c0[1])};
-                        double[] curr = {Double.parseDouble(c1[0]),
-                            Double.parseDouble(c1[1])};
-                        double[] diff = {curr[0]-prev[0], curr[1]-prev[1]};
-                        double[] c_diff = {curr[0]+1044,curr[1]-135};
-
-                        double ang = (180/Math.PI)*Math.atan(diff[1]/diff[0]);                         
-                            if (ang < 0) ang += 360;
-                        double c_ang = (180/Math.PI)*Math.atan(c_diff[1]/c_diff[0]);                         
-                            if (c_ang < 0) c_ang += 360;
-                        
-                        double d_ang = c_ang-ang;
-                        
-                        // Compute its acute counterpart
-                        
-                        //*
-                        if (d_ang > 180)
-                            d_ang -= 360;
-                        else if (d_ang < -180)
-                            d_ang += 360;
-                        /*
-                        // Advance the monster towards player by a predefined value
-                        ang += Math.min(3, Math.abs(d_ang)) * Math.signum(d_ang);
-                        
-                            // Convert this angle back in the -180 to 180 degree range
-
-                            
-                            System.out.println(ang);
-                            
-
-
-                            //monster.setAngle(a);
-                        
-                            /*
-                            if (ang > 180){
-                                ang -= 360;
-                            } else if (ang < -180){
-                            ang += 360;
-                            }
-                            
-                            // Convert this angle back in the -180 to 180 degree range
-
-                            
-                            Robot robot = new Robot();
-                            robot.keyPress(Character.toUpperCase('1'));
-                            if(d_ang<0){
-                                robot.keyPress(Character.toUpperCase('d'));
-                                robot.delay(100);
-                                robot.keyRelease(Character.toUpperCase('d'));
-                            } else if (d_ang>0) {
-                                robot.keyPress(Character.toUpperCase('a'));
-                                robot.delay(100);
-                                robot.keyRelease(Character.toUpperCase('a'));
-                            }
-                            
-
-                        
-                            System.out.println(ang + "  " + c_ang + "  " + d_ang);
-                        */
-                        
-                        //-1044,135
+    
+    
+    
+    
+ 

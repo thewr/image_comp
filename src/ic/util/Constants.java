@@ -3,7 +3,10 @@ package ic.util;
 import java.awt.Color;
 import java.awt.Rectangle;
 import java.io.BufferedReader;
+import java.io.File;
+import java.util.LinkedList;
 import javax.swing.JCheckBox;
+import javax.swing.JRadioButton;
 
 
 
@@ -26,10 +29,14 @@ public final class Constants {
     public static String CHorder = "";
     public static JCheckBox jSlowed;
     public static double sliderval = 70.0;
+    public static LinkedList<JRadioButton> radioButtons = new LinkedList<>();
+    public static long _filePointer = 0;
+    public static long _fileLen = new File(filename).length();
+    
 
     public final static void updateFilename(){
         filename = "K:\\p99\\EQLITE\\Logs\\eqlog_"+ Constants.charname +"_project1999.txt";
     }
-
+    
     
 }

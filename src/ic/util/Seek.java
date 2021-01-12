@@ -63,10 +63,8 @@ public final class Seek {
                         
                         double desiredAngle = c - a;
                         // Compute its acute counterpart
-                        if (desiredAngle > 180)
-                            desiredAngle -= 360;
-                        else if (desiredAngle < -180)
-                            desiredAngle += 360;
+                        if (desiredAngle > 180) desiredAngle -= 360;
+                        else if (desiredAngle < -180) desiredAngle += 360;
                         
                         // Advance the monster towards player by a predefined value
                         a += Math.min(3, Math.abs(desiredAngle)) * Math.signum(desiredAngle);
@@ -91,7 +89,7 @@ public final class Seek {
                         double distance2 = getDistance(Constants.location, c0);
                         double diff = distance1-distance2;
                         
-                        int x = 7* (int) Math.round(Math.abs(desiredAngle/4));
+                        int x = (int)(111*Math.round(Math.abs(a))/40);
        
                         
                         if(distance1<50){

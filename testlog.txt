@@ -1,0 +1,920 @@
+[Tue Dec 15 23:04:19 2020] You have slain a sebilite golem!
+[Tue Dec 15 23:04:19 2020] Your faction standing with LegionofCabilis could not possibly get any better.
+[Tue Dec 15 23:04:19 2020] Your faction standing with Trakanon could not possibly get any worse.
+[Tue Dec 15 23:04:19 2020] You gain party experience!!
+[Tue Dec 15 23:04:21 2020] Kyrinna falls into a state of torpor.
+[Tue Dec 15 23:04:22 2020] Syadasty begins to cast a spell.
+[Tue Dec 15 23:04:23 2020] Raynes crushes a sepsis scarab for 138 points of damage.
+[Tue Dec 15 23:04:23 2020] Raynes crushes a sepsis scarab for 20 points of damage.
+[Tue Dec 15 23:04:23 2020] Raynes crushes a sepsis scarab for 54 points of damage.
+[Tue Dec 15 23:04:24 2020] Xenober hits a sepsis scarab for 62 points of damage.
+[Tue Dec 15 23:04:24 2020] Auto attack on.
+[Tue Dec 15 23:04:25 2020] You slash a sepsis scarab for 59 points of damage.
+[Tue Dec 15 23:04:25 2020] You taunt a sepsis scarab to ignore others and attack you!
+[Tue Dec 15 23:04:25 2020] A sepsis scarab is engulfed in darkness.
+[Tue Dec 15 23:04:25 2020] Syadasty slashes a sepsis scarab for 44 points of damage.
+[Tue Dec 15 23:04:25 2020] Xenober hits a sepsis scarab for 40 points of damage.
+[Tue Dec 15 23:04:26 2020] Syadasty slashes a sepsis scarab for 45 points of damage.
+[Tue Dec 15 23:04:27 2020] Xenober hits a sepsis scarab for 35 points of damage.
+[Tue Dec 15 23:04:27 2020] Raynes crushes a sepsis scarab for 116 points of damage.
+[Tue Dec 15 23:04:27 2020] You slash a sepsis scarab for 76 points of damage.
+[Tue Dec 15 23:04:27 2020] Shamzoukas peers through a telescope.
+[Tue Dec 15 23:04:28 2020] Syadasty slashes a sepsis scarab for 38 points of damage.
+[Tue Dec 15 23:04:28 2020] Xenober hits a sepsis scarab for 62 points of damage.
+[Tue Dec 15 23:04:28 2020] Xenober hits a sepsis scarab for 32 points of damage.
+[Tue Dec 15 23:04:28 2020] Shamzoukas begins to cast a spell.
+[Tue Dec 15 23:04:28 2020] Syadasty begins to cast a spell.
+[Tue Dec 15 23:04:29 2020] Xenober hits a sepsis scarab for 23 points of damage.
+[Tue Dec 15 23:04:29 2020] Shamzoukas's casting is interrupted!
+[Tue Dec 15 23:04:29 2020] Xenober kicks a sepsis scarab for 68 points of damage.
+[Tue Dec 15 23:04:30 2020] Syadasty is surrounded by a vortex of shadows.
+[Tue Dec 15 23:04:30 2020] A sepsis scarab is surrounded by a vortex of shadows.
+[Tue Dec 15 23:04:30 2020] Syadasty slashes a sepsis scarab for 45 points of damage.
+[Tue Dec 15 23:04:30 2020] Leuke Scores a critical hit!(79)
+[Tue Dec 15 23:04:30 2020] You slash a sepsis scarab for 117 points of damage.
+[Tue Dec 15 23:04:30 2020] Shamzoukas begins to cast a spell.
+[Tue Dec 15 23:04:30 2020] a sepsis scarab says 'You will not evade me Kyrinna!'
+[Tue Dec 15 23:04:30 2020] A sepsis scarab bites Kyrinna for 138 points of damage.
+[Tue Dec 15 23:04:30 2020] Xenober hits a sepsis scarab for 62 points of damage.
+[Tue Dec 15 23:04:31 2020] Raynes crushes a sepsis scarab for 84 points of damage.
+[Tue Dec 15 23:04:31 2020] Xenober hits a sepsis scarab for 62 points of damage.
+[Tue Dec 15 23:04:32 2020] Raynes kicks a sepsis scarab for 42 points of damage.
+[Tue Dec 15 23:04:32 2020] Syadasty slashes a sepsis scarab for 69 points of damage.
+[Tue Dec 15 23:04:32 2020] Syadasty slashes a sepsis scarab for 61 points of damage.
+[Tue Dec 15 23:04:32 2020] You slash a sepsis scarab for 117 points of damage.
+[Tue Dec 15 23:04:32 2020] Raynes crushes a sepsis scarab for 51 points of damage.
+[Tue Dec 15 23:04:33 2020] Syadasty begins to cast a spell.
+[Tue Dec 15 23:04:35 2020] Syadasty slashes a sepsis scarab for 46 points of damage.
+[Tue Dec 15 23:04:35 2020] Syadasty slashes a sepsis scarab for 40 points of damage.
+[Tue Dec 15 23:04:35 2020] You slash a sepsis scarab for 105 points of damage.
+[Tue Dec 15 23:04:35 2020] Raynes crushes a sepsis scarab for 11 points of damage.
+[Tue Dec 15 23:04:36 2020] Syadasty slashes a sepsis scarab for 31 points of damage.
+[Tue Dec 15 23:04:36 2020] Syadasty slashes a sepsis scarab for 11 points of damage.
+[Tue Dec 15 23:04:36 2020] Shamzoukas regains concentration and continues casting.
+[Tue Dec 15 23:04:36 2020] Syadasty falls into a state of torpor.
+[Tue Dec 15 23:04:36 2020] Raynes crushes a sepsis scarab for 83 points of damage.
+[Tue Dec 15 23:04:36 2020] Raynes crushes a sepsis scarab for 15 points of damage.
+[Tue Dec 15 23:04:36 2020] Xenober hits a sepsis scarab for 49 points of damage.
+[Tue Dec 15 23:04:37 2020] Syadasty slashes a sepsis scarab for 74 points of damage.
+[Tue Dec 15 23:04:37 2020] Leuke Scores a critical hit!(136)
+[Tue Dec 15 23:04:37 2020] You slash a sepsis scarab for 174 points of damage.
+[Tue Dec 15 23:04:37 2020] You slash a sepsis scarab for 122 points of damage.
+[Tue Dec 15 23:04:37 2020] Raynes crushes a sepsis scarab for 30 points of damage.
+[Tue Dec 15 23:04:38 2020] Syadasty begins to cast a spell.
+[Tue Dec 15 23:04:38 2020] Shamzoukas peers through a telescope.
+[Tue Dec 15 23:04:38 2020] Raynes crushes a sepsis scarab for 85 points of damage.
+[Tue Dec 15 23:04:38 2020] Raynes crushes a sepsis scarab for 133 points of damage.
+[Tue Dec 15 23:04:38 2020] A sepsis scarab bites Syadasty for 97 points of damage.
+[Tue Dec 15 23:04:38 2020] A sepsis scarab bites Syadasty for 138 points of damage.
+[Tue Dec 15 23:04:39 2020] Xenober hits a sepsis scarab for 59 points of damage.
+[Tue Dec 15 23:04:39 2020] You taunt a sepsis scarab to ignore others and attack you!
+[Tue Dec 15 23:04:39 2020] Shamzoukas begins to cast a spell.
+[Tue Dec 15 23:04:39 2020] Syadasty regains concentration and continues casting.
+[Tue Dec 15 23:04:39 2020] Syadasty is surrounded by a vortex of shadows.
+[Tue Dec 15 23:04:39 2020] A sepsis scarab is surrounded by a vortex of shadows.
+[Tue Dec 15 23:04:39 2020] Syadasty slashes a sepsis scarab for 11 points of damage.
+[Tue Dec 15 23:04:40 2020] You slash a sepsis scarab for 105 points of damage.
+[Tue Dec 15 23:04:40 2020] You slash a sepsis scarab for 76 points of damage.
+[Tue Dec 15 23:04:40 2020] Xenober hits a sepsis scarab for 47 points of damage.
+[Tue Dec 15 23:04:40 2020] Raynes crushes a sepsis scarab for 17 points of damage.
+[Tue Dec 15 23:04:40 2020] Raynes crushes a sepsis scarab for 56 points of damage.
+[Tue Dec 15 23:04:40 2020] Raynes crushes a sepsis scarab for 114 points of damage.
+[Tue Dec 15 23:04:41 2020] Raynes crushes a sepsis scarab for 31 points of damage.
+[Tue Dec 15 23:04:41 2020] Raynes crushes a sepsis scarab for 30 points of damage.
+[Tue Dec 15 23:04:42 2020] A sepsis scarab yawns.
+[Tue Dec 15 23:04:42 2020] Raynes crushes a sepsis scarab for 101 points of damage.
+[Tue Dec 15 23:04:42 2020] Raynes crushes a sepsis scarab for 71 points of damage.
+[Tue Dec 15 23:04:42 2020] Xenober hits a sepsis scarab for 30 points of damage.
+[Tue Dec 15 23:04:42 2020] Xenober hits a sepsis scarab for 40 points of damage.
+[Tue Dec 15 23:04:42 2020] You slash a sepsis scarab for 97 points of damage.
+[Tue Dec 15 23:04:42 2020] You slash a sepsis scarab for 72 points of damage.
+[Tue Dec 15 23:04:42 2020] Shamzoukas peers through a telescope.
+[Tue Dec 15 23:04:43 2020] Shamzoukas begins to cast a spell.
+[Tue Dec 15 23:04:43 2020] Syadasty slashes a sepsis scarab for 18 points of damage.
+[Tue Dec 15 23:04:44 2020] Raynes crushes a sepsis scarab for 16 points of damage.
+[Tue Dec 15 23:04:44 2020] Raynes crushes a sepsis scarab for 24 points of damage.
+[Tue Dec 15 23:04:45 2020] Xenober hits a sepsis scarab for 25 points of damage.
+[Tue Dec 15 23:04:45 2020] You slash a sepsis scarab for 51 points of damage.
+[Tue Dec 15 23:04:45 2020] Syadasty slashes a sepsis scarab for 40 points of damage.
+[Tue Dec 15 23:04:46 2020] Syadasty begins to cast a spell.
+[Tue Dec 15 23:04:46 2020] Xenober hits a sepsis scarab for 54 points of damage.
+[Tue Dec 15 23:04:46 2020] Shamzoukas peers through a telescope.
+[Tue Dec 15 23:04:46 2020] Raynes crushes a sepsis scarab for 30 points of damage.
+[Tue Dec 15 23:04:46 2020] Raynes crushes a sepsis scarab for 49 points of damage.
+[Tue Dec 15 23:04:46 2020] Raynes crushes a sepsis scarab for 38 points of damage.
+[Tue Dec 15 23:04:47 2020] Shamzoukas begins to cast a spell.
+[Tue Dec 15 23:04:47 2020] Xenober hits a sepsis scarab for 30 points of damage.
+[Tue Dec 15 23:04:47 2020] Xenober hits a sepsis scarab for 62 points of damage.
+[Tue Dec 15 23:04:47 2020] Xenober hits a sepsis scarab for 62 points of damage.
+[Tue Dec 15 23:04:47 2020] You slash a sepsis scarab for 84 points of damage.
+[Tue Dec 15 23:04:47 2020] You slash a sepsis scarab for 125 points of damage.
+[Tue Dec 15 23:04:48 2020] Raynes crushes a sepsis scarab for 71 points of damage.
+[Tue Dec 15 23:04:48 2020] Raynes crushes a sepsis scarab for 115 points of damage.
+[Tue Dec 15 23:04:49 2020] Xenober kicks a sepsis scarab for 71 points of damage.
+[Tue Dec 15 23:04:49 2020] Raynes crushes a sepsis scarab for 6 points of damage.
+[Tue Dec 15 23:04:49 2020] Syadasty slashes a sepsis scarab for 45 points of damage.
+[Tue Dec 15 23:04:49 2020] Syadasty slashes a sepsis scarab for 17 points of damage.
+[Tue Dec 15 23:04:50 2020] Xenober hits a sepsis scarab for 32 points of damage.
+[Tue Dec 15 23:04:50 2020] Xenober hits a sepsis scarab for 62 points of damage.
+[Tue Dec 15 23:04:50 2020] Xenober hits a sepsis scarab for 37 points of damage.
+[Tue Dec 15 23:04:50 2020] Shamzoukas peers through a telescope.
+[Tue Dec 15 23:04:50 2020] You slash a sepsis scarab for 204 points of damage.
+[Tue Dec 15 23:04:50 2020] Raynes crushes a sepsis scarab for 105 points of damage.
+[Tue Dec 15 23:04:50 2020] Shamzoukas's spell fizzles!
+[Tue Dec 15 23:04:50 2020] Raynes kicks a sepsis scarab for 42 points of damage.
+[Tue Dec 15 23:04:51 2020] Xenober hits a sepsis scarab for 62 points of damage.
+[Tue Dec 15 23:04:51 2020] Shamzoukas begins to cast a spell.
+[Tue Dec 15 23:04:51 2020] Raynes crushes a sepsis scarab for 68 points of damage.
+[Tue Dec 15 23:04:51 2020] Syadasty slashes a sepsis scarab for 45 points of damage.
+[Tue Dec 15 23:04:52 2020] Raynes crushes a sepsis scarab for 70 points of damage.
+[Tue Dec 15 23:04:52 2020] You slash a sepsis scarab for 109 points of damage.
+[Tue Dec 15 23:04:53 2020] Raynes crushes a sepsis scarab for 18 points of damage.
+[Tue Dec 15 23:04:53 2020] Xenober hits a sepsis scarab for 62 points of damage.
+[Tue Dec 15 23:04:54 2020] Shamzoukas peers through a telescope.
+[Tue Dec 15 23:04:54 2020] A sepsis scarab bites Syadasty for 126 points of damage.
+[Tue Dec 15 23:04:54 2020] Raynes crushes a sepsis scarab for 90 points of damage.
+[Tue Dec 15 23:04:54 2020] Raynes crushes a sepsis scarab for 42 points of damage.
+[Tue Dec 15 23:04:54 2020] Maladark begins to cast a spell.
+[Tue Dec 15 23:04:54 2020] Xenober hits a sepsis scarab for 54 points of damage.
+[Tue Dec 15 23:04:54 2020] Xenober hits a sepsis scarab for 52 points of damage.
+[Tue Dec 15 23:04:54 2020] Xenober hits a sepsis scarab for 62 points of damage.
+[Tue Dec 15 23:04:54 2020] Xenober hits a sepsis scarab for 20 points of damage.
+[Tue Dec 15 23:04:54 2020] You are thirsty.
+[Tue Dec 15 23:04:54 2020] You are out of drink.
+[Tue Dec 15 23:04:54 2020] Shamzoukas's spell fizzles!
+[Tue Dec 15 23:04:55 2020] You slash a sepsis scarab for 221 points of damage.
+[Tue Dec 15 23:04:55 2020] Shamzoukas begins to cast a spell.
+[Tue Dec 15 23:04:55 2020] Syadasty slashes a sepsis scarab for 36 points of damage.
+[Tue Dec 15 23:04:56 2020] Xenober hits a sepsis scarab for 54 points of damage.
+[Tue Dec 15 23:04:56 2020] Syadasty's spell fizzles!
+[Tue Dec 15 23:04:56 2020] Raynes kicks a sepsis scarab for 136 points of damage.
+[Tue Dec 15 23:04:56 2020] You taunt a sepsis scarab to ignore others and attack you!
+[Tue Dec 15 23:04:56 2020] You kick a sepsis scarab for 16 points of damage.
+[Tue Dec 15 23:04:56 2020] Raynes crushes a sepsis scarab for 84 points of damage.
+[Tue Dec 15 23:04:56 2020] Syadasty begins to cast a spell.
+[Tue Dec 15 23:04:57 2020] Xenober hits a sepsis scarab for 23 points of damage.
+[Tue Dec 15 23:04:58 2020] Syadasty is surrounded by a vortex of shadows.
+[Tue Dec 15 23:04:58 2020] A sepsis scarab is surrounded by a vortex of shadows.
+[Tue Dec 15 23:04:58 2020] Syadasty slashes a sepsis scarab for 18 points of damage.
+[Tue Dec 15 23:04:58 2020] Xenober hits a sepsis scarab for 28 points of damage.
+[Tue Dec 15 23:04:58 2020] Shamzoukas peers through a telescope.
+[Tue Dec 15 23:04:58 2020] Raynes crushes a sepsis scarab for 14 points of damage.
+[Tue Dec 15 23:04:59 2020] Shamzoukas begins to cast a spell.
+[Tue Dec 15 23:04:59 2020] Raynes crushes a sepsis scarab for 7 points of damage.
+[Tue Dec 15 23:04:59 2020] Xenober hits a sepsis scarab for 28 points of damage.
+[Tue Dec 15 23:05:00 2020] You slash a sepsis scarab for 199 points of damage.
+[Tue Dec 15 23:05:00 2020] You slash a sepsis scarab for 134 points of damage.
+[Tue Dec 15 23:05:00 2020] Raynes crushes a sepsis scarab for 80 points of damage.
+[Tue Dec 15 23:05:00 2020] Raynes crushes a sepsis scarab for 64 points of damage.
+[Tue Dec 15 23:05:00 2020] Maladark feels protected from fire and ice.
+[Tue Dec 15 23:05:01 2020] Raynes kicks a sepsis scarab for 73 points of damage.
+[Tue Dec 15 23:05:01 2020] Raynes crushes a sepsis scarab for 23 points of damage.
+[Tue Dec 15 23:05:02 2020] Xenober hits a sepsis scarab for 62 points of damage.
+[Tue Dec 15 23:05:02 2020] A sepsis scarab bashes Shamzoukas for 33 points of damage.
+[Tue Dec 15 23:05:02 2020] A sepsis scarab bites Shamzoukas for 30 points of damage.
+[Tue Dec 15 23:05:02 2020] Shamzoukas peers through a telescope.
+[Tue Dec 15 23:05:02 2020] A sepsis scarab bites Syadasty for 62 points of damage.
+[Tue Dec 15 23:05:02 2020] Raynes crushes a sepsis scarab for 56 points of damage.
+[Tue Dec 15 23:05:02 2020] Raynes crushes a sepsis scarab for 14 points of damage.
+[Tue Dec 15 23:05:03 2020] Xenober hits a sepsis scarab for 32 points of damage.
+[Tue Dec 15 23:05:03 2020] Xenober hits a sepsis scarab for 18 points of damage.
+[Tue Dec 15 23:05:03 2020] Shamzoukas begins to cast a spell.
+[Tue Dec 15 23:05:04 2020] Syadasty slashes a sepsis scarab for 45 points of damage.
+[Tue Dec 15 23:05:04 2020] Raynes crushes a sepsis scarab for 63 points of damage.
+[Tue Dec 15 23:05:05 2020] Kyrinna tells the group, 'Mezzing >>>> a sepsis scarab <<<<.. You break it you bought it..'
+[Tue Dec 15 23:05:05 2020] Kyrinna begins to cast a spell.
+[Tue Dec 15 23:05:05 2020] You slash a sepsis scarab for 122 points of damage.
+[Tue Dec 15 23:05:05 2020] Raynes crushes a sepsis scarab for 34 points of damage.
+[Tue Dec 15 23:05:05 2020] Raynes crushes a sepsis scarab for 57 points of damage.
+[Tue Dec 15 23:05:05 2020] A sepsis scarab bashes Syadasty for 37 points of damage.
+[Tue Dec 15 23:05:06 2020] Syadasty slashes a sepsis scarab for 47 points of damage.
+[Tue Dec 15 23:05:06 2020] Syadasty slashes a sepsis scarab for 86 points of damage.
+[Tue Dec 15 23:05:06 2020] Raynes crushes a sepsis scarab for 80 points of damage.
+[Tue Dec 15 23:05:06 2020] Xenober hits a sepsis scarab for 62 points of damage.
+[Tue Dec 15 23:05:06 2020] A sepsis scarab reels from a stunning blow.
+[Tue Dec 15 23:05:06 2020] a sepsis scarab has been slain by Raynes!
+[Tue Dec 15 23:05:06 2020] You gain party experience!!
+[Tue Dec 15 23:05:07 2020] A sepsis scarab has been entranced.
+[Tue Dec 15 23:05:08 2020] Auto attack on.
+[Tue Dec 15 23:05:08 2020] You slash a sepsis scarab for 173 points of damage.
+[Tue Dec 15 23:05:09 2020] Raynes crushes a sepsis scarab for 14 points of damage.
+[Tue Dec 15 23:05:09 2020] Shamzoukas falls into a state of torpor.
+[Tue Dec 15 23:05:11 2020] Raynes crushes a sepsis scarab for 82 points of damage.
+[Tue Dec 15 23:05:11 2020] Raynes crushes a sepsis scarab for 53 points of damage.
+[Tue Dec 15 23:05:11 2020] You slash a sepsis scarab for 175 points of damage.
+[Tue Dec 15 23:05:11 2020] You slash a sepsis scarab for 154 points of damage.
+[Tue Dec 15 23:05:11 2020] Raynes crushes a sepsis scarab for 56 points of damage.
+[Tue Dec 15 23:05:11 2020] Raynes crushes a sepsis scarab for 159 points of damage.
+[Tue Dec 15 23:05:11 2020] You taunt a sepsis scarab to ignore others and attack you!
+[Tue Dec 15 23:05:12 2020] Syadasty slashes a sepsis scarab for 37 points of damage.
+[Tue Dec 15 23:05:12 2020] Syadasty slashes a sepsis scarab for 45 points of damage.
+[Tue Dec 15 23:05:12 2020] Raynes crushes a sepsis scarab for 21 points of damage.
+[Tue Dec 15 23:05:13 2020] Syadasty slashes a sepsis scarab for 53 points of damage.
+[Tue Dec 15 23:05:13 2020] Raynes crushes a sepsis scarab for 49 points of damage.
+[Tue Dec 15 23:05:13 2020] Raynes crushes a sepsis scarab for 58 points of damage.
+[Tue Dec 15 23:05:14 2020] You slash a sepsis scarab for 135 points of damage.
+[Tue Dec 15 23:05:14 2020] Syadasty slashes a sepsis scarab for 91 points of damage.
+[Tue Dec 15 23:05:14 2020] Raynes crushes a sepsis scarab for 56 points of damage.
+[Tue Dec 15 23:05:15 2020] Syadasty slashes a sepsis scarab for 38 points of damage.
+[Tue Dec 15 23:05:15 2020] Syadasty begins to cast a spell.
+[Tue Dec 15 23:05:15 2020] Raynes crushes a sepsis scarab for 51 points of damage.
+[Tue Dec 15 23:05:16 2020] Raynes crushes a sepsis scarab for 32 points of damage.
+[Tue Dec 15 23:05:17 2020] Raynes kicks a sepsis scarab for 75 points of damage.
+[Tue Dec 15 23:05:17 2020] Syadasty is surrounded by a vortex of shadows.
+[Tue Dec 15 23:05:17 2020] A sepsis scarab is surrounded by a vortex of shadows.
+[Tue Dec 15 23:05:17 2020] Syadasty slashes a sepsis scarab for 59 points of damage.
+[Tue Dec 15 23:05:17 2020] Syadasty slashes a sepsis scarab for 73 points of damage.
+[Tue Dec 15 23:05:17 2020] Raynes crushes a sepsis scarab for 32 points of damage.
+[Tue Dec 15 23:05:17 2020] --Kyrinna has looted a Crystallized Sulfur.--
+[Tue Dec 15 23:05:17 2020] Raynes crushes a sepsis scarab for 106 points of damage.
+[Tue Dec 15 23:05:18 2020] Syadasty slashes a sepsis scarab for 48 points of damage.
+[Tue Dec 15 23:05:19 2020] You slash a sepsis scarab for 228 points of damage.
+[Tue Dec 15 23:05:19 2020] Leuke Scores a critical hit!(115)
+[Tue Dec 15 23:05:19 2020] You slash a sepsis scarab for 153 points of damage.
+[Tue Dec 15 23:05:19 2020] Xenober kicks a sepsis scarab for 22 points of damage.
+[Tue Dec 15 23:05:19 2020] Xenober hits a sepsis scarab for 49 points of damage.
+[Tue Dec 15 23:05:19 2020] Xenober hits a sepsis scarab for 49 points of damage.
+[Tue Dec 15 23:05:19 2020] Xenober hits a sepsis scarab for 35 points of damage.
+[Tue Dec 15 23:05:19 2020] Syadasty slashes a sepsis scarab for 22 points of damage.
+[Tue Dec 15 23:05:19 2020] Raynes crushes a sepsis scarab for 38 points of damage.
+[Tue Dec 15 23:05:20 2020] Syadasty begins to cast a spell.
+[Tue Dec 15 23:05:20 2020] Xenober hits a sepsis scarab for 62 points of damage.
+[Tue Dec 15 23:05:21 2020] Raynes crushes a sepsis scarab for 79 points of damage.
+[Tue Dec 15 23:05:21 2020] You slash a sepsis scarab for 74 points of damage.
+[Tue Dec 15 23:05:21 2020] You slash a sepsis scarab for 63 points of damage.
+[Tue Dec 15 23:05:21 2020] Raynes crushes a sepsis scarab for 149 points of damage.
+[Tue Dec 15 23:05:21 2020] Raynes crushes a sepsis scarab for 75 points of damage.
+[Tue Dec 15 23:05:22 2020] Raynes kicks a sepsis scarab for 42 points of damage.
+[Tue Dec 15 23:05:22 2020] Xenober hits a sepsis scarab for 62 points of damage.
+[Tue Dec 15 23:05:23 2020] Maladark crushes a sepsis scarab for 5 points of damage.
+[Tue Dec 15 23:05:23 2020] Raynes crushes a sepsis scarab for 15 points of damage.
+[Tue Dec 15 23:05:23 2020] Raynes crushes a sepsis scarab for 63 points of damage.
+[Tue Dec 15 23:05:23 2020] Syadasty slashes a sepsis scarab for 92 points of damage.
+[Tue Dec 15 23:05:23 2020] Syadasty slashes a sepsis scarab for 11 points of damage.
+[Tue Dec 15 23:05:23 2020] Xenober hits a sepsis scarab for 35 points of damage.
+[Tue Dec 15 23:05:23 2020] Xenober hits a sepsis scarab for 62 points of damage.
+[Tue Dec 15 23:05:24 2020] You slash a sepsis scarab for 122 points of damage.
+[Tue Dec 15 23:05:24 2020] You slash a sepsis scarab for 122 points of damage.
+[Tue Dec 15 23:05:25 2020] Raynes crushes a sepsis scarab for 24 points of damage.
+[Tue Dec 15 23:05:25 2020] Raynes crushes a sepsis scarab for 33 points of damage.
+[Tue Dec 15 23:05:25 2020] Syadasty slashes a sepsis scarab for 45 points of damage.
+[Tue Dec 15 23:05:26 2020] Raynes crushes a sepsis scarab for 21 points of damage.
+[Tue Dec 15 23:05:26 2020] Syadasty slashes a sepsis scarab for 13 points of damage.
+[Tue Dec 15 23:05:26 2020] Syadasty slashes a sepsis scarab for 11 points of damage.
+[Tue Dec 15 23:05:26 2020] Xenober hits a sepsis scarab for 62 points of damage.
+[Tue Dec 15 23:05:26 2020] Xenober hits a sepsis scarab for 16 points of damage.
+[Tue Dec 15 23:05:26 2020] Maladark crushes a sepsis scarab for 10 points of damage.
+[Tue Dec 15 23:05:26 2020] You slash a sepsis scarab for 59 points of damage.
+[Tue Dec 15 23:05:26 2020] You slash a sepsis scarab for 109 points of damage.
+[Tue Dec 15 23:05:27 2020] A sepsis scarab bites Syadasty for 91 points of damage.
+[Tue Dec 15 23:05:27 2020] Raynes kicks a sepsis scarab for 42 points of damage.
+[Tue Dec 15 23:05:27 2020] Raynes crushes a sepsis scarab for 18 points of damage.
+[Tue Dec 15 23:05:27 2020] Raynes crushes a sepsis scarab for 35 points of damage.
+[Tue Dec 15 23:05:28 2020] Maladark crushes a sepsis scarab for 16 points of damage.
+[Tue Dec 15 23:05:28 2020] Syadasty slashes a sepsis scarab for 84 points of damage.
+[Tue Dec 15 23:05:28 2020] Xenober hits a sepsis scarab for 30 points of damage.
+[Tue Dec 15 23:05:28 2020] Xenober hits a sepsis scarab for 32 points of damage.
+[Tue Dec 15 23:05:28 2020] Raynes crushes a sepsis scarab for 35 points of damage.
+[Tue Dec 15 23:05:29 2020] You slash a sepsis scarab for 88 points of damage.
+[Tue Dec 15 23:05:29 2020] Syadasty glows with a green aura.
+[Tue Dec 15 23:05:29 2020] A sepsis scarab becomes engulfed in a noxious cloud of green mist.
+[Tue Dec 15 23:05:29 2020] Syadasty slashes a sepsis scarab for 27 points of damage.
+[Tue Dec 15 23:05:30 2020] Xenober hits a sepsis scarab for 62 points of damage.
+[Tue Dec 15 23:05:30 2020] Xenober hits a sepsis scarab for 62 points of damage.
+[Tue Dec 15 23:05:30 2020] Xenober hits a sepsis scarab for 23 points of damage.
+[Tue Dec 15 23:05:31 2020] Maladark crushes a sepsis scarab for 14 points of damage.
+[Tue Dec 15 23:05:31 2020] Syadasty slashes a sepsis scarab for 79 points of damage.
+[Tue Dec 15 23:05:31 2020] You slash a sepsis scarab for 55 points of damage.
+[Tue Dec 15 23:05:31 2020] You slash a sepsis scarab for 105 points of damage.
+[Tue Dec 15 23:05:31 2020] Xenober kicks a sepsis scarab for 71 points of damage.
+[Tue Dec 15 23:05:32 2020] Syadasty slashes a sepsis scarab for 27 points of damage.
+[Tue Dec 15 23:05:32 2020] Xenober hits a sepsis scarab for 62 points of damage.
+[Tue Dec 15 23:05:32 2020] Xenober hits a sepsis scarab for 28 points of damage.
+[Tue Dec 15 23:05:33 2020] Syadasty slashes a sepsis scarab for 20 points of damage.
+[Tue Dec 15 23:05:33 2020] Xenober hits a sepsis scarab for 25 points of damage.
+[Tue Dec 15 23:05:34 2020] You slash a sepsis scarab for 59 points of damage.
+[Tue Dec 15 23:05:34 2020] You kick a sepsis scarab for 12 points of damage.
+[Tue Dec 15 23:05:34 2020] Syadasty slashes a sepsis scarab for 25 points of damage.
+[Tue Dec 15 23:05:34 2020] Syadasty slashes a sepsis scarab for 18 points of damage.
+[Tue Dec 15 23:05:34 2020] Xenober hits a sepsis scarab for 32 points of damage.
+[Tue Dec 15 23:05:35 2020] Syadasty slashes a sepsis scarab for 88 points of damage.
+[Tue Dec 15 23:05:36 2020] Xenober hits a sepsis scarab for 62 points of damage.
+[Tue Dec 15 23:05:36 2020] Xenober hits a sepsis scarab for 49 points of damage.
+[Tue Dec 15 23:05:36 2020] Xenober hits a sepsis scarab for 23 points of damage.
+[Tue Dec 15 23:05:36 2020] You slash a sepsis scarab for 84 points of damage.
+[Tue Dec 15 23:05:36 2020] You slash a sepsis scarab for 63 points of damage.
+[Tue Dec 15 23:05:36 2020] You taunt a sepsis scarab to ignore others and attack you!
+[Tue Dec 15 23:05:37 2020] Maladark crushes a sepsis scarab for 1 point of damage.
+[Tue Dec 15 23:05:37 2020] Syadasty slashes a sepsis scarab for 31 points of damage.
+[Tue Dec 15 23:05:37 2020] Xenober hits a sepsis scarab for 23 points of damage.
+[Tue Dec 15 23:05:37 2020] Xenober hits a sepsis scarab for 49 points of damage.
+[Tue Dec 15 23:05:38 2020] Xenober hits a sepsis scarab for 62 points of damage.
+[Tue Dec 15 23:05:38 2020] Xenober hits a sepsis scarab for 32 points of damage.
+[Tue Dec 15 23:05:38 2020] Shamzoukas peers through a telescope.
+[Tue Dec 15 23:05:39 2020] Leuke Scores a critical hit!(227)
+[Tue Dec 15 23:05:39 2020] You slash a sepsis scarab for 265 points of damage.
+[Tue Dec 15 23:05:39 2020] Shamzoukas begins to cast a spell.
+[Tue Dec 15 23:05:39 2020] A sepsis scarab bites Syadasty for 96 points of damage.
+[Tue Dec 15 23:05:39 2020] Xenober hits a sepsis scarab for 40 points of damage.
+[Tue Dec 15 23:05:40 2020] You kick a sepsis scarab for 14 points of damage.
+[Tue Dec 15 23:05:40 2020] Syadasty slashes a sepsis scarab for 25 points of damage.
+[Tue Dec 15 23:05:41 2020] You are thirsty.
+[Tue Dec 15 23:05:41 2020] You are out of drink.
+[Tue Dec 15 23:05:41 2020] You slash a sepsis scarab for 237 points of damage.
+[Tue Dec 15 23:05:42 2020] Xenober hits a sepsis scarab for 25 points of damage.
+[Tue Dec 15 23:05:42 2020] Xenober hits a sepsis scarab for 16 points of damage.
+[Tue Dec 15 23:05:42 2020] Shamzoukas peers through a telescope.
+[Tue Dec 15 23:05:42 2020] A sepsis scarab bites Syadasty for 69 points of damage.
+[Tue Dec 15 23:05:42 2020] A sepsis scarab bites Syadasty for 96 points of damage.
+[Tue Dec 15 23:05:42 2020] Shamzoukas begins to cast a spell.
+[Tue Dec 15 23:05:43 2020] Syadasty slashes a sepsis scarab for 68 points of damage.
+[Tue Dec 15 23:05:44 2020] Syadasty slashes a sepsis scarab for 18 points of damage.
+[Tue Dec 15 23:05:44 2020] You slash a sepsis scarab for 162 points of damage.
+[Tue Dec 15 23:05:44 2020] Xenober hits a sepsis scarab for 54 points of damage.
+[Tue Dec 15 23:05:44 2020] Xenober hits a sepsis scarab for 62 points of damage.
+[Tue Dec 15 23:05:45 2020] Syadasty slashes a sepsis scarab for 45 points of damage.
+[Tue Dec 15 23:05:45 2020] Xenober hits a sepsis scarab for 62 points of damage.
+[Tue Dec 15 23:05:45 2020] Shamzoukas peers through a telescope.
+[Tue Dec 15 23:05:46 2020] Maladark crushes a sepsis scarab for 5 points of damage.
+[Tue Dec 15 23:05:46 2020] Shamzoukas begins to cast a spell.
+[Tue Dec 15 23:05:46 2020] You slash a sepsis scarab for 243 points of damage.
+[Tue Dec 15 23:05:46 2020] You have slain a sepsis scarab!
+[Tue Dec 15 23:05:47 2020] You gain party experience!!
+[Tue Dec 15 23:05:47 2020] You must target an NPC to taunt first.
+[Tue Dec 15 23:05:49 2020] Shamzoukas peers through a telescope.
+[Tue Dec 15 23:05:49 2020] Shamzoukas begins to cast a spell.
+[Tue Dec 15 23:05:52 2020] Froglok kor shaman hits Raynes for 20 points of damage.
+[Tue Dec 15 23:05:53 2020] Shamzoukas peers through a telescope.
+[Tue Dec 15 23:05:53 2020] Syadasty tells the group, 'Spell: Spirit of Scale, Crystallized Sulfur'
+[Tue Dec 15 23:05:53 2020] Shamzoukas begins to cast a spell.
+[Tue Dec 15 23:05:54 2020] Froglok kor shaman hits Raynes for 20 points of damage.
+[Tue Dec 15 23:05:54 2020] Xenober hits froglok kor shaman for 62 points of damage.
+[Tue Dec 15 23:05:54 2020] Xenober hits froglok kor shaman for 62 points of damage.
+[Tue Dec 15 23:05:55 2020] Maladark begins to cast a spell.
+[Tue Dec 15 23:05:55 2020] Raynes crushes froglok kor shaman for 79 points of damage.
+[Tue Dec 15 23:05:55 2020] Auto attack on.
+[Tue Dec 15 23:05:56 2020] You slash froglok kor shaman for 127 points of damage.
+[Tue Dec 15 23:05:56 2020] You slash froglok kor shaman for 108 points of damage.
+[Tue Dec 15 23:05:56 2020] Xenober hits froglok kor shaman for 62 points of damage.
+[Tue Dec 15 23:05:56 2020] Xenober hits froglok kor shaman for 40 points of damage.
+[Tue Dec 15 23:05:56 2020] You taunt froglok kor shaman to ignore others and attack you!
+[Tue Dec 15 23:05:56 2020] Raynes kicks froglok kor shaman for 87 points of damage.
+[Tue Dec 15 23:05:56 2020] froglok kor shaman says 'I'll teach you to interfere with me Leuke.'
+[Tue Dec 15 23:05:56 2020] Froglok kor shaman yawns.
+[Tue Dec 15 23:05:56 2020] Raynes crushes froglok kor shaman for 6 points of damage.
+[Tue Dec 15 23:05:57 2020] You can't see your target from here.
+[Tue Dec 15 23:05:57 2020] Shamzoukas peers through a telescope.
+[Tue Dec 15 23:05:58 2020] Shamzoukas begins to cast a spell.
+[Tue Dec 15 23:05:58 2020] Raynes crushes froglok kor shaman for 74 points of damage.
+[Tue Dec 15 23:05:58 2020] Raynes crushes froglok kor shaman for 47 points of damage.
+[Tue Dec 15 23:05:58 2020] Xenober hits froglok kor shaman for 62 points of damage.
+[Tue Dec 15 23:05:58 2020] Xenober hits froglok kor shaman for 18 points of damage.
+[Tue Dec 15 23:05:59 2020] Raynes crushes froglok kor shaman for 107 points of damage.
+[Tue Dec 15 23:05:59 2020] Xenober hits froglok kor shaman for 62 points of damage.
+[Tue Dec 15 23:05:59 2020] Syadasty slashes froglok kor shaman for 88 points of damage.
+[Tue Dec 15 23:06:00 2020] Kyrinna begins to cast a spell.
+[Tue Dec 15 23:06:00 2020] Xenober hits froglok kor shaman for 62 points of damage.
+[Tue Dec 15 23:06:01 2020] Shamzoukas peers through a telescope.
+[Tue Dec 15 23:06:01 2020] Xenober kicks froglok kor shaman for 39 points of damage.
+[Tue Dec 15 23:06:01 2020] Shamzoukas begins to cast a spell.
+[Tue Dec 15 23:06:01 2020] Raynes kicks froglok kor shaman for 42 points of damage.
+[Tue Dec 15 23:06:01 2020] Raynes crushes froglok kor shaman for 71 points of damage.
+[Tue Dec 15 23:06:01 2020] You kick froglok kor shaman for 2 points of damage.
+[Tue Dec 15 23:06:02 2020] Xenober hits froglok kor shaman for 62 points of damage.
+[Tue Dec 15 23:06:02 2020] Xenober hits froglok kor shaman for 47 points of damage.
+[Tue Dec 15 23:06:02 2020] Froglok kor shaman staggers.
+[Tue Dec 15 23:06:03 2020] Xenober hits froglok kor shaman for 18 points of damage.
+[Tue Dec 15 23:06:03 2020] Syadasty slashes froglok kor shaman for 45 points of damage.
+[Tue Dec 15 23:06:03 2020] Syadasty slashes froglok kor shaman for 11 points of damage.
+[Tue Dec 15 23:06:03 2020] You slash froglok kor shaman for 234 points of damage.
+[Tue Dec 15 23:06:03 2020] Raynes crushes froglok kor shaman for 156 points of damage.
+[Tue Dec 15 23:06:04 2020] Xenober hits froglok kor shaman for 35 points of damage.
+[Tue Dec 15 23:06:04 2020] Xenober hits froglok kor shaman for 62 points of damage.
+[Tue Dec 15 23:06:04 2020] Xenober hits froglok kor shaman for 62 points of damage.
+[Tue Dec 15 23:06:04 2020] Syadasty slashes froglok kor shaman for 31 points of damage.
+[Tue Dec 15 23:06:05 2020] Shamzoukas peers through a telescope.
+[Tue Dec 15 23:06:05 2020] Raynes crushes froglok kor shaman for 71 points of damage.
+[Tue Dec 15 23:06:05 2020] Xenober hits froglok kor shaman for 62 points of damage.
+[Tue Dec 15 23:06:05 2020] Xenober hits froglok kor shaman for 62 points of damage.
+[Tue Dec 15 23:06:05 2020] Syadasty slashes froglok kor shaman for 43 points of damage.
+[Tue Dec 15 23:06:06 2020] Raynes kicks froglok kor shaman for 42 points of damage.
+[Tue Dec 15 23:06:06 2020] Xenober hits froglok kor shaman for 62 points of damage.
+[Tue Dec 15 23:06:06 2020] Xenober hits froglok kor shaman for 57 points of damage.
+[Tue Dec 15 23:06:07 2020] Syadasty slashes froglok kor shaman for 41 points of damage.
+[Tue Dec 15 23:06:07 2020] Syadasty slashes froglok kor shaman for 23 points of damage.
+[Tue Dec 15 23:06:08 2020] Xenober hits froglok kor shaman for 62 points of damage.
+[Tue Dec 15 23:06:08 2020] You slash froglok kor shaman for 174 points of damage.
+[Tue Dec 15 23:06:08 2020] You slash froglok kor shaman for 122 points of damage.
+[Tue Dec 15 23:06:08 2020] Shamzoukas peers through a telescope.
+[Tue Dec 15 23:06:09 2020] Xenober hits froglok kor shaman for 62 points of damage.
+[Tue Dec 15 23:06:09 2020] Shamzoukas begins to cast a spell.
+[Tue Dec 15 23:06:09 2020] Syadasty slashes froglok kor shaman for 67 points of damage.
+[Tue Dec 15 23:06:09 2020] Maladark begins to cast a spell.
+[Tue Dec 15 23:06:09 2020] Raynes crushes froglok kor shaman for 161 points of damage.
+[Tue Dec 15 23:06:09 2020] Raynes crushes froglok kor shaman for 85 points of damage.
+[Tue Dec 15 23:06:10 2020] Xenober hits froglok kor shaman for 42 points of damage.
+[Tue Dec 15 23:06:10 2020] Syadasty slashes froglok kor shaman for 82 points of damage.
+[Tue Dec 15 23:06:10 2020] Syadasty slashes froglok kor shaman for 45 points of damage.
+[Tue Dec 15 23:06:11 2020] You slash froglok kor shaman for 80 points of damage.
+[Tue Dec 15 23:06:11 2020] Xenober hits froglok kor shaman for 18 points of damage.
+[Tue Dec 15 23:06:11 2020] Xenober hits froglok kor shaman for 62 points of damage.
+[Tue Dec 15 23:06:11 2020] Xenober hits froglok kor shaman for 62 points of damage.
+[Tue Dec 15 23:06:12 2020] Shamzoukas peers through a telescope.
+[Tue Dec 15 23:06:13 2020] Shamzoukas begins to cast a spell.
+[Tue Dec 15 23:06:13 2020] Xenober kicks froglok kor shaman for 48 points of damage.
+[Tue Dec 15 23:06:14 2020] Maladark's casting is interrupted!
+[Tue Dec 15 23:06:15 2020] Xenober hits froglok kor shaman for 52 points of damage.
+[Tue Dec 15 23:06:15 2020] Xenober hits froglok kor shaman for 49 points of damage.
+[Tue Dec 15 23:06:15 2020] Xenober hits froglok kor shaman for 32 points of damage.
+[Tue Dec 15 23:06:15 2020] Xenober hits froglok kor shaman for 25 points of damage.
+[Tue Dec 15 23:06:16 2020] You slash froglok kor shaman for 148 points of damage.
+[Tue Dec 15 23:06:16 2020] You have slain froglok kor shaman!
+[Tue Dec 15 23:06:16 2020] Your faction standing with LegionofCabilis could not possibly get any better.
+[Tue Dec 15 23:06:16 2020] Your faction standing with Trakanon could not possibly get any worse.
+[Tue Dec 15 23:06:16 2020] You gain party experience!!
+[Tue Dec 15 23:06:19 2020] Shamzoukas falls into a state of torpor.
+[Tue Dec 15 23:06:24 2020] --Syadasty has looted a Froglok Meat.--
+[Tue Dec 15 23:06:27 2020] You are thirsty.
+[Tue Dec 15 23:06:27 2020] You are out of drink.
+[Tue Dec 15 23:06:29 2020] --Syadasty has looted a Words of the Ethereal.--
+[Tue Dec 15 23:06:31 2020] Shamzoukas peers through a telescope.
+[Tue Dec 15 23:06:31 2020] Shamzoukas begins to cast a spell.
+[Tue Dec 15 23:06:34 2020] Shamzoukas peers through a telescope.
+[Tue Dec 15 23:06:34 2020] Xenober hits froglok dar knight for 62 points of damage.
+[Tue Dec 15 23:06:34 2020] Xenober hits froglok dar knight for 62 points of damage.
+[Tue Dec 15 23:06:34 2020] Shamzoukas begins to cast a spell.
+[Tue Dec 15 23:06:34 2020] Froglok dar knight bashes Maladark for 31 points of damage.
+[Tue Dec 15 23:06:34 2020] Froglok dar knight hits Maladark for 116 points of damage.
+[Tue Dec 15 23:06:35 2020] Syadasty begins to cast a spell.
+[Tue Dec 15 23:06:35 2020] Xenober hits froglok dar knight for 62 points of damage.
+[Tue Dec 15 23:06:35 2020] Xenober hits froglok dar knight for 37 points of damage.
+[Tue Dec 15 23:06:36 2020] Auto attack on.
+[Tue Dec 15 23:06:36 2020] Syadasty is surrounded by a vortex of shadows.
+[Tue Dec 15 23:06:36 2020] Froglok dar knight is surrounded by a vortex of shadows.
+[Tue Dec 15 23:06:36 2020] You can't see your target from here.
+[Tue Dec 15 23:06:37 2020] Froglok dar knight hits Syadasty for 21 points of damage.
+[Tue Dec 15 23:06:37 2020] Raynes's eyes glow violet.
+[Tue Dec 15 23:06:37 2020] Froglok dar knight yawns.
+[Tue Dec 15 23:06:37 2020] You taunt froglok dar knight to ignore others and attack you!
+[Tue Dec 15 23:06:37 2020] Syadasty slashes froglok dar knight for 22 points of damage.
+[Tue Dec 15 23:06:37 2020] Syadasty slashes froglok dar knight for 21 points of damage.
+[Tue Dec 15 23:06:37 2020] froglok dar knight says 'I'll teach you to interfere with me Leuke.'
+[Tue Dec 15 23:06:38 2020] Xenober hits froglok dar knight for 62 points of damage.
+[Tue Dec 15 23:06:38 2020] Shamzoukas peers through a telescope.
+[Tue Dec 15 23:06:38 2020] Shamzoukas's spell fizzles!
+[Tue Dec 15 23:06:39 2020] Syadasty slashes froglok dar knight for 17 points of damage.
+[Tue Dec 15 23:06:39 2020] Syadasty slashes froglok dar knight for 57 points of damage.
+[Tue Dec 15 23:06:39 2020] froglok dar knight was hit by non-melee for 33 points of damage.
+[Tue Dec 15 23:06:39 2020] Froglok dar knight hits YOU for 91 points of damage.
+[Tue Dec 15 23:06:39 2020] Raynes begins to cast a spell.
+[Tue Dec 15 23:06:39 2020] Xenober hits froglok dar knight for 62 points of damage.
+[Tue Dec 15 23:06:39 2020] Syadasty begins to cast a spell.
+[Tue Dec 15 23:06:39 2020] Maladark begins to cast a spell.
+[Tue Dec 15 23:06:40 2020] Shamzoukas begins to cast a spell.
+[Tue Dec 15 23:06:40 2020] Xenober hits froglok dar knight for 62 points of damage.
+[Tue Dec 15 23:06:40 2020] Xenober hits froglok dar knight for 62 points of damage.
+[Tue Dec 15 23:06:41 2020] Syadasty slashes froglok dar knight for 58 points of damage.
+[Tue Dec 15 23:06:41 2020] Raynes is covered by an aura of black petals.
+[Tue Dec 15 23:06:41 2020] You slash froglok dar knight for 232 points of damage.
+[Tue Dec 15 23:06:41 2020] You slash froglok dar knight for 193 points of damage.
+[Tue Dec 15 23:06:41 2020] Xenober hits froglok dar knight for 62 points of damage.
+[Tue Dec 15 23:06:42 2020] Syadasty slashes froglok dar knight for 28 points of damage.
+[Tue Dec 15 23:06:42 2020] Froglok dar knight kicks Syadasty for 26 points of damage.
+[Tue Dec 15 23:06:42 2020] Xenober hits froglok dar knight for 62 points of damage.
+[Tue Dec 15 23:06:42 2020] Xenober hits froglok dar knight for 62 points of damage.
+[Tue Dec 15 23:06:43 2020] Shamzoukas peers through a telescope.
+[Tue Dec 15 23:06:43 2020] Syadasty slashes froglok dar knight for 22 points of damage.
+[Tue Dec 15 23:06:43 2020] Syadasty slashes froglok dar knight for 75 points of damage.
+[Tue Dec 15 23:06:43 2020] Shamzoukas begins to cast a spell.
+[Tue Dec 15 23:06:44 2020] You slash froglok dar knight for 158 points of damage.
+[Tue Dec 15 23:06:44 2020] Raynes begins to cast a spell.
+[Tue Dec 15 23:06:44 2020] Syadasty slashes froglok dar knight for 45 points of damage.
+[Tue Dec 15 23:06:45 2020] Xenober hits froglok dar knight for 35 points of damage.
+[Tue Dec 15 23:06:45 2020] Syadasty slashes froglok dar knight for 34 points of damage.
+[Tue Dec 15 23:06:45 2020] Syadasty slashes froglok dar knight for 88 points of damage.
+[Tue Dec 15 23:06:46 2020] Raynes is covered by an aura of green petals.
+[Tue Dec 15 23:06:46 2020] Xenober hits froglok dar knight for 62 points of damage.
+[Tue Dec 15 23:06:46 2020] Xenober hits froglok dar knight for 62 points of damage.
+[Tue Dec 15 23:06:46 2020] Xenober hits froglok dar knight for 23 points of damage.
+[Tue Dec 15 23:06:46 2020] Shamzoukas peers through a telescope.
+[Tue Dec 15 23:06:46 2020] You slash froglok dar knight for 76 points of damage.
+[Tue Dec 15 23:06:46 2020] Shamzoukas begins to cast a spell.
+[Tue Dec 15 23:06:47 2020] Syadasty slashes froglok dar knight for 67 points of damage.
+[Tue Dec 15 23:06:47 2020] Xenober kicks froglok dar knight for 71 points of damage.
+[Tue Dec 15 23:06:47 2020] Xenober hits froglok dar knight for 54 points of damage.
+[Tue Dec 15 23:06:48 2020] Xenober hits froglok dar knight for 62 points of damage.
+[Tue Dec 15 23:06:48 2020] Xenober hits froglok dar knight for 25 points of damage.
+[Tue Dec 15 23:06:49 2020] You slash froglok dar knight for 247 points of damage.
+[Tue Dec 15 23:06:49 2020] You slash froglok dar knight for 83 points of damage.
+[Tue Dec 15 23:06:50 2020] Shamzoukas peers through a telescope.
+[Tue Dec 15 23:06:50 2020] Xenober hits froglok dar knight for 62 points of damage.
+[Tue Dec 15 23:06:50 2020] Xenober hits froglok dar knight for 20 points of damage.
+[Tue Dec 15 23:06:50 2020] Shamzoukas begins to cast a spell.
+[Tue Dec 15 23:06:51 2020] Xenober hits froglok dar knight for 62 points of damage.
+[Tue Dec 15 23:06:51 2020] Syadasty slashes froglok dar knight for 45 points of damage.
+[Tue Dec 15 23:06:51 2020] Syadasty slashes froglok dar knight for 80 points of damage.
+[Tue Dec 15 23:06:53 2020] Syadasty slashes froglok dar knight for 63 points of damage.
+[Tue Dec 15 23:06:53 2020] Syadasty slashes froglok dar knight for 39 points of damage.
+[Tue Dec 15 23:06:53 2020] Shamzoukas peers through a telescope.
+[Tue Dec 15 23:06:53 2020] Xenober hits froglok dar knight for 54 points of damage.
+[Tue Dec 15 23:06:53 2020] Xenober hits froglok dar knight for 62 points of damage.
+[Tue Dec 15 23:06:53 2020] Shamzoukas's spell fizzles!
+[Tue Dec 15 23:06:53 2020] The grim aura fades.
+[Tue Dec 15 23:06:54 2020] You slash froglok dar knight for 122 points of damage.
+[Tue Dec 15 23:06:54 2020] Leuke Scores a critical hit!(79)
+[Tue Dec 15 23:06:54 2020] You slash froglok dar knight for 117 points of damage.
+[Tue Dec 15 23:06:54 2020] Syadasty slashes froglok dar knight for 58 points of damage.
+[Tue Dec 15 23:06:54 2020] Shamzoukas begins to cast a spell.
+[Tue Dec 15 23:06:55 2020] Syadasty slashes froglok dar knight for 14 points of damage.
+[Tue Dec 15 23:06:56 2020] Xenober hits froglok dar knight for 62 points of damage.
+[Tue Dec 15 23:06:56 2020] Xenober hits froglok dar knight for 62 points of damage.
+[Tue Dec 15 23:06:56 2020] Syadasty slashes froglok dar knight for 11 points of damage.
+[Tue Dec 15 23:06:56 2020] Syadasty slashes froglok dar knight for 85 points of damage.
+[Tue Dec 15 23:06:56 2020] You slash froglok dar knight for 122 points of damage.
+[Tue Dec 15 23:06:57 2020] froglok dar knight was hit by non-melee for 33 points of damage.
+[Tue Dec 15 23:06:57 2020] Froglok dar knight hits YOU for 41 points of damage.
+[Tue Dec 15 23:06:57 2020] Xenober hits froglok dar knight for 62 points of damage.
+[Tue Dec 15 23:06:57 2020] Xenober hits froglok dar knight for 37 points of damage.
+[Tue Dec 15 23:06:57 2020] Xenober hits froglok dar knight for 40 points of damage.
+[Tue Dec 15 23:06:57 2020] Shamzoukas peers through a telescope.
+[Tue Dec 15 23:06:57 2020] Syadasty slashes froglok dar knight for 16 points of damage.
+[Tue Dec 15 23:06:57 2020] Shamzoukas begins to cast a spell.
+[Tue Dec 15 23:06:58 2020] Xenober hits froglok dar knight for 28 points of damage.
+[Tue Dec 15 23:06:59 2020] Syadasty slashes froglok dar knight for 40 points of damage.
+[Tue Dec 15 23:06:59 2020] Syadasty slashes froglok dar knight for 45 points of damage.
+[Tue Dec 15 23:06:59 2020] You slash froglok dar knight for 46 points of damage.
+[Tue Dec 15 23:07:00 2020] Xenober kicks froglok dar knight for 71 points of damage.
+[Tue Dec 15 23:07:00 2020] Xenober hits froglok dar knight for 59 points of damage.
+[Tue Dec 15 23:07:01 2020] Shamzoukas peers through a telescope.
+[Tue Dec 15 23:07:01 2020] Shamzoukas begins to cast a spell.
+[Tue Dec 15 23:07:01 2020] Syadasty slashes froglok dar knight for 11 points of damage.
+[Tue Dec 15 23:07:01 2020] Syadasty slashes froglok dar knight for 45 points of damage.
+[Tue Dec 15 23:07:01 2020] You slash froglok dar knight for 65 points of damage.
+[Tue Dec 15 23:07:01 2020] Syadasty's spell fizzles!
+[Tue Dec 15 23:07:02 2020] Xenober hits froglok dar knight for 62 points of damage.
+[Tue Dec 15 23:07:02 2020] Syadasty begins to cast a spell.
+[Tue Dec 15 23:07:03 2020] Your target is too far away, get closer!
+[Tue Dec 15 23:07:03 2020] You can't see your target from here.
+[Tue Dec 15 23:07:04 2020] Your target is too far away, get closer!
+[Tue Dec 15 23:07:04 2020] Xenober hits froglok dar knight for 57 points of damage.
+[Tue Dec 15 23:07:04 2020] Xenober hits froglok dar knight for 35 points of damage.
+[Tue Dec 15 23:07:04 2020] Shamzoukas peers through a telescope.
+[Tue Dec 15 23:07:04 2020] Shamzoukas begins to cast a spell.
+[Tue Dec 15 23:07:05 2020] Your target is too far away, get closer!
+[Tue Dec 15 23:07:05 2020] Syadasty's hands begin to glow.
+[Tue Dec 15 23:07:05 2020] Xenober hits froglok dar knight for 42 points of damage.
+[Tue Dec 15 23:07:05 2020] Xenober hits froglok dar knight for 30 points of damage.
+[Tue Dec 15 23:07:06 2020] Your target is too far away, get closer!
+[Tue Dec 15 23:07:06 2020] Your target is too far away, get closer!
+[Tue Dec 15 23:07:07 2020] Xenober hits froglok dar knight for 57 points of damage.
+[Tue Dec 15 23:07:07 2020] Your target is too far away, get closer!
+[Tue Dec 15 23:07:07 2020] Shamzoukas peers through a telescope.
+[Tue Dec 15 23:07:08 2020] Syadasty glows with a green aura.
+[Tue Dec 15 23:07:08 2020] Froglok dar knight becomes engulfed in a noxious cloud of green mist.
+[Tue Dec 15 23:07:08 2020] Syadasty slashes froglok dar knight for 65 points of damage.
+[Tue Dec 15 23:07:08 2020] Syadasty begins to cast a spell.
+[Tue Dec 15 23:07:08 2020] Shamzoukas begins to cast a spell.
+[Tue Dec 15 23:07:08 2020] Your target is too far away, get closer!
+[Tue Dec 15 23:07:09 2020] Your target is too far away, get closer!
+[Tue Dec 15 23:07:09 2020] Your target is too far away, get closer!
+[Tue Dec 15 23:07:09 2020] Froglok dar knight is surrounded by darkness.
+[Tue Dec 15 23:07:10 2020] Xenober hits froglok dar knight for 49 points of damage.
+[Tue Dec 15 23:07:10 2020] Xenober hits froglok dar knight for 18 points of damage.
+[Tue Dec 15 23:07:11 2020] Syadasty slashes froglok dar knight for 51 points of damage.
+[Tue Dec 15 23:07:11 2020] Your target is too far away, get closer!
+[Tue Dec 15 23:07:11 2020] Your target is too far away, get closer!
+[Tue Dec 15 23:07:11 2020] Shamzoukas peers through a telescope.
+[Tue Dec 15 23:07:11 2020] Xenober hits froglok dar knight for 42 points of damage.
+[Tue Dec 15 23:07:11 2020] Shamzoukas begins to cast a spell.
+[Tue Dec 15 23:07:11 2020] Your target is too far away, get closer!
+[Tue Dec 15 23:07:12 2020] Syadasty slashes froglok dar knight for 80 points of damage.
+[Tue Dec 15 23:07:12 2020] Xenober kicks froglok dar knight for 53 points of damage.
+[Tue Dec 15 23:07:13 2020] Xenober hits froglok dar knight for 47 points of damage.
+[Tue Dec 15 23:07:13 2020] Xenober hits froglok dar knight for 20 points of damage.
+[Tue Dec 15 23:07:13 2020] Xenober hits froglok dar knight for 40 points of damage.
+[Tue Dec 15 23:07:13 2020] You are thirsty.
+[Tue Dec 15 23:07:13 2020] You are out of drink.
+[Tue Dec 15 23:07:13 2020] Your target is too far away, get closer!
+[Tue Dec 15 23:07:13 2020] Syadasty slashes froglok dar knight for 50 points of damage.
+[Tue Dec 15 23:07:13 2020] Syadasty slashes froglok dar knight for 37 points of damage.
+[Tue Dec 15 23:07:13 2020] froglok dar knight has been slain by Syadasty!
+[Tue Dec 15 23:07:13 2020] Your faction standing with LegionofCabilis could not possibly get any better.
+[Tue Dec 15 23:07:13 2020] Your faction standing with Trakanon could not possibly get any worse.
+[Tue Dec 15 23:07:13 2020] You gain party experience!!
+[Tue Dec 15 23:07:15 2020] Shamzoukas peers through a telescope.
+[Tue Dec 15 23:07:15 2020] Shamzoukas begins to cast a spell.
+[Tue Dec 15 23:07:18 2020] --Syadasty has looted a Peridot.--
+[Tue Dec 15 23:07:21 2020] Shamzoukas falls into a state of torpor.
+[Tue Dec 15 23:07:26 2020] Froglok ilis knight hits Raynes for 140 points of damage.
+[Tue Dec 15 23:07:27 2020] Shamzoukas begins to cast a spell.
+[Tue Dec 15 23:07:28 2020] Froglok ilis knight hits Raynes for 122 points of damage.
+[Tue Dec 15 23:07:28 2020] Auto attack on.
+[Tue Dec 15 23:07:28 2020] You slash froglok ilis knight for 89 points of damage.
+[Tue Dec 15 23:07:28 2020] YOU are burned!
+[Tue Dec 15 23:07:28 2020] You taunt froglok ilis knight to ignore others and attack you!
+[Tue Dec 15 23:07:28 2020] froglok ilis knight was hit by non-melee for 33 points of damage.
+[Tue Dec 15 23:07:28 2020] Froglok ilis knight bashes YOU for 43 points of damage.
+[Tue Dec 15 23:07:29 2020] Syadasty begins to cast a spell.
+[Tue Dec 15 23:07:29 2020] Froglok krup shaman hits Raynes for 80 points of damage.
+[Tue Dec 15 23:07:29 2020] froglok ilis knight was hit by non-melee for 33 points of damage.
+[Tue Dec 15 23:07:29 2020] Froglok ilis knight hits YOU for 98 points of damage.
+[Tue Dec 15 23:07:30 2020] Auto attack off.
+[Tue Dec 15 23:07:30 2020] Syadasty's casting is interrupted!
+[Tue Dec 15 23:07:30 2020] Froglok ilis knight yawns.
+[Tue Dec 15 23:07:31 2020] froglok ilis knight says 'You will not evade me Shamzoukas!'
+[Tue Dec 15 23:07:31 2020] Kyrinna tells the group, 'Mezzing >>>> froglok krup shaman <<<<.. You break it you bought it..'
+[Tue Dec 15 23:07:31 2020] Kyrinna begins to cast a spell.
+[Tue Dec 15 23:07:32 2020] Syadasty begins to cast a spell.
+[Tue Dec 15 23:07:32 2020] Auto attack on.
+[Tue Dec 15 23:07:32 2020] You slash froglok ilis knight for 84 points of damage.
+[Tue Dec 15 23:07:32 2020] YOU are burned!
+[Tue Dec 15 23:07:33 2020] You kick froglok ilis knight for 6 points of damage.
+[Tue Dec 15 23:07:33 2020] YOU are burned!
+[Tue Dec 15 23:07:34 2020] Syadasty's casting is interrupted!
+[Tue Dec 15 23:07:35 2020] You slash froglok ilis knight for 130 points of damage.
+[Tue Dec 15 23:07:35 2020] YOU are burned!
+[Tue Dec 15 23:07:35 2020] You slash froglok ilis knight for 122 points of damage.
+[Tue Dec 15 23:07:35 2020] YOU are burned!
+[Tue Dec 15 23:07:35 2020] You taunt froglok ilis knight to ignore others and attack you!
+[Tue Dec 15 23:07:36 2020] Raynes crushes froglok ilis knight for 93 points of damage.
+[Tue Dec 15 23:07:36 2020] Raynes crushes froglok ilis knight for 59 points of damage.
+[Tue Dec 15 23:07:36 2020] Raynes crushes froglok ilis knight for 23 points of damage.
+[Tue Dec 15 23:07:36 2020] froglok ilis knight says 'I'll teach you to interfere with me Leuke.'
+[Tue Dec 15 23:07:36 2020] Syadasty slashes froglok ilis knight for 92 points of damage.
+[Tue Dec 15 23:07:36 2020] Shamzoukas begins to cast a spell.
+[Tue Dec 15 23:07:36 2020] Froglok krup shaman hits Kyrinna for 63 points of damage.
+[Tue Dec 15 23:07:36 2020] Froglok krup shaman hits Kyrinna for 91 points of damage.
+[Tue Dec 15 23:07:37 2020] Syadasty begins to cast a spell.
+[Tue Dec 15 23:07:37 2020] You slash froglok ilis knight for 122 points of damage.
+[Tue Dec 15 23:07:37 2020] YOU are burned!
+[Tue Dec 15 23:07:38 2020] Froglok krup shaman hits Kyrinna for 63 points of damage.
+[Tue Dec 15 23:07:38 2020] Syadasty slashes froglok ilis knight for 40 points of damage.
+[Tue Dec 15 23:07:39 2020] Froglok krup shaman yawns.
+[Tue Dec 15 23:07:39 2020] Syadasty slashes froglok ilis knight for 20 points of damage.
+[Tue Dec 15 23:07:40 2020] You slash froglok ilis knight for 88 points of damage.
+[Tue Dec 15 23:07:40 2020] YOU are burned!
+[Tue Dec 15 23:07:40 2020] You slash froglok ilis knight for 109 points of damage.
+[Tue Dec 15 23:07:40 2020] YOU are burned!
+[Tue Dec 15 23:07:41 2020] Shamzoukas peers through a telescope.
+[Tue Dec 15 23:07:41 2020] Raynes crushes froglok ilis knight for 51 points of damage.
+[Tue Dec 15 23:07:41 2020] Raynes crushes froglok ilis knight for 62 points of damage.
+[Tue Dec 15 23:07:41 2020] Shamzoukas begins to cast a spell.
+[Tue Dec 15 23:07:41 2020] Kyrinna tells the group, 'Mezzing >>>> froglok krup shaman <<<<.. You break it you bought it..'
+[Tue Dec 15 23:07:42 2020] Your shielding fades.
+[Tue Dec 15 23:07:42 2020] Kyrinna begins to cast a spell.
+[Tue Dec 15 23:07:42 2020] Leuke Scores a critical hit!(122)
+[Tue Dec 15 23:07:42 2020] You slash froglok ilis knight for 160 points of damage.
+[Tue Dec 15 23:07:42 2020] YOU are burned!
+[Tue Dec 15 23:07:43 2020] Raynes crushes froglok ilis knight for 9 points of damage.
+[Tue Dec 15 23:07:44 2020] Froglok krup shaman has been entranced.
+[Tue Dec 15 23:07:45 2020] Syadasty begins to cast a spell.
+[Tue Dec 15 23:07:45 2020] You slash froglok ilis knight for 137 points of damage.
+[Tue Dec 15 23:07:45 2020] YOU are burned!
+[Tue Dec 15 23:07:45 2020] You slash froglok ilis knight for 94 points of damage.
+[Tue Dec 15 23:07:45 2020] YOU are burned!
+[Tue Dec 15 23:07:45 2020] Xenober hits froglok ilis knight for 62 points of damage.
+[Tue Dec 15 23:07:45 2020] Xenober hits froglok ilis knight for 32 points of damage.
+[Tue Dec 15 23:07:46 2020] Raynes crushes froglok ilis knight for 28 points of damage.
+[Tue Dec 15 23:07:46 2020] Xenober hits froglok ilis knight for 57 points of damage.
+[Tue Dec 15 23:07:46 2020] Xenober hits froglok ilis knight for 40 points of damage.
+[Tue Dec 15 23:07:47 2020] froglok ilis knight was hit by non-melee for 33 points of damage.
+[Tue Dec 15 23:07:47 2020] Froglok ilis knight hits YOU for 104 points of damage.
+[Tue Dec 15 23:07:47 2020] Raynes crushes froglok ilis knight for 97 points of damage.
+[Tue Dec 15 23:07:47 2020] Raynes crushes froglok ilis knight for 35 points of damage.
+[Tue Dec 15 23:07:47 2020] You slash froglok ilis knight for 180 points of damage.
+[Tue Dec 15 23:07:47 2020] YOU are burned!
+[Tue Dec 15 23:07:47 2020] You slash froglok ilis knight for 42 points of damage.
+[Tue Dec 15 23:07:47 2020] YOU are burned!
+[Tue Dec 15 23:07:47 2020] Raynes falls into a state of torpor.
+[Tue Dec 15 23:07:47 2020] Xenober hits froglok ilis knight for 20 points of damage.
+[Tue Dec 15 23:07:47 2020] Xenober hits froglok ilis knight for 62 points of damage.
+[Tue Dec 15 23:07:48 2020] Maladark begins to cast a spell.
+[Tue Dec 15 23:07:49 2020] Syadasty slashes froglok ilis knight for 32 points of damage.
+[Tue Dec 15 23:07:50 2020] Raynes crushes froglok ilis knight for 8 points of damage.
+[Tue Dec 15 23:07:50 2020] You slash froglok ilis knight for 230 points of damage.
+[Tue Dec 15 23:07:50 2020] YOU are burned!
+[Tue Dec 15 23:07:50 2020] Xenober hits froglok ilis knight for 59 points of damage.
+[Tue Dec 15 23:07:50 2020] Xenober hits froglok ilis knight for 62 points of damage.
+[Tue Dec 15 23:07:50 2020] Syadasty slashes froglok ilis knight for 25 points of damage.
+[Tue Dec 15 23:07:50 2020] Syadasty slashes froglok ilis knight for 14 points of damage.
+[Tue Dec 15 23:07:51 2020] Xenober hits froglok ilis knight for 62 points of damage.
+[Tue Dec 15 23:07:51 2020] Syadasty slashes froglok ilis knight for 11 points of damage.
+[Tue Dec 15 23:07:51 2020] Syadasty slashes froglok ilis knight for 20 points of damage.
+[Tue Dec 15 23:07:51 2020] Xenober kicks froglok ilis knight for 71 points of damage.
+[Tue Dec 15 23:07:52 2020] You slash froglok ilis knight for 134 points of damage.
+[Tue Dec 15 23:07:52 2020] YOU are burned!
+[Tue Dec 15 23:07:53 2020] Raynes crushes froglok ilis knight for 38 points of damage.
+[Tue Dec 15 23:07:53 2020] Xenober hits froglok ilis knight for 54 points of damage.
+[Tue Dec 15 23:07:53 2020] Xenober hits froglok ilis knight for 54 points of damage.
+[Tue Dec 15 23:07:53 2020] Xenober hits froglok ilis knight for 52 points of damage.
+[Tue Dec 15 23:07:53 2020] Froglok ilis knight hits Syadasty for 98 points of damage.
+[Tue Dec 15 23:07:54 2020] Syadasty slashes froglok ilis knight for 73 points of damage.
+[Tue Dec 15 23:07:55 2020] froglok ilis knight was hit by non-melee for 33 points of damage.
+[Tue Dec 15 23:07:55 2020] Froglok ilis knight hits YOU for 98 points of damage.
+[Tue Dec 15 23:07:55 2020] Syadasty slashes froglok ilis knight for 43 points of damage.
+[Tue Dec 15 23:07:55 2020] You slash froglok ilis knight for 57 points of damage.
+[Tue Dec 15 23:07:55 2020] YOU are burned!
+[Tue Dec 15 23:07:57 2020] Raynes crushes froglok ilis knight for 30 points of damage.
+[Tue Dec 15 23:07:57 2020] Xenober hits froglok ilis knight for 42 points of damage.
+[Tue Dec 15 23:07:57 2020] Xenober hits froglok ilis knight for 62 points of damage.
+[Tue Dec 15 23:07:57 2020] You slash froglok ilis knight for 74 points of damage.
+[Tue Dec 15 23:07:57 2020] YOU are burned!
+[Tue Dec 15 23:07:57 2020] You slash froglok ilis knight for 166 points of damage.
+[Tue Dec 15 23:07:57 2020] YOU are burned!
+[Tue Dec 15 23:07:58 2020] Raynes crushes froglok ilis knight for 66 points of damage.
+[Tue Dec 15 23:07:58 2020] Xenober hits froglok ilis knight for 62 points of damage.
+[Tue Dec 15 23:07:58 2020] Syadasty slashes froglok ilis knight for 57 points of damage.
+[Tue Dec 15 23:07:58 2020] Syadasty slashes froglok ilis knight for 40 points of damage.
+[Tue Dec 15 23:07:59 2020] You are thirsty.
+[Tue Dec 15 23:07:59 2020] You are out of drink.
+[Tue Dec 15 23:07:59 2020] Xenober hits froglok ilis knight for 62 points of damage.
+[Tue Dec 15 23:07:59 2020] Xenober hits froglok ilis knight for 42 points of damage.
+[Tue Dec 15 23:08:00 2020] Syadasty slashes froglok ilis knight for 45 points of damage.
+[Tue Dec 15 23:08:01 2020] Xenober hits froglok ilis knight for 52 points of damage.
+[Tue Dec 15 23:08:02 2020] Shamzoukas peers through a telescope.
+[Tue Dec 15 23:08:02 2020] Xenober hits froglok ilis knight for 49 points of damage.
+[Tue Dec 15 23:08:02 2020] Syadasty slashes froglok ilis knight for 25 points of damage.
+[Tue Dec 15 23:08:02 2020] Shamzoukas begins to cast a spell.
+[Tue Dec 15 23:08:02 2020] You slash froglok ilis knight for 128 points of damage.
+[Tue Dec 15 23:08:02 2020] YOU are burned!
+[Tue Dec 15 23:08:02 2020] You slash froglok ilis knight for 72 points of damage.
+[Tue Dec 15 23:08:02 2020] YOU are burned!
+[Tue Dec 15 23:08:03 2020] froglok ilis knight was hit by non-melee for 33 points of damage.
+[Tue Dec 15 23:08:03 2020] Froglok ilis knight hits YOU for 104 points of damage.
+[Tue Dec 15 23:08:03 2020] Syadasty slashes froglok ilis knight for 25 points of damage.
+[Tue Dec 15 23:08:04 2020] Raynes crushes froglok ilis knight for 41 points of damage.
+[Tue Dec 15 23:08:04 2020] Raynes crushes froglok ilis knight for 20 points of damage.
+[Tue Dec 15 23:08:04 2020] Xenober kicks froglok ilis knight for 48 points of damage.
+[Tue Dec 15 23:08:04 2020] Xenober hits froglok ilis knight for 62 points of damage.
+[Tue Dec 15 23:08:04 2020] Syadasty slashes froglok ilis knight for 14 points of damage.
+[Tue Dec 15 23:08:04 2020] Syadasty slashes froglok ilis knight for 27 points of damage.
+[Tue Dec 15 23:08:04 2020] Maladark begins to cast a spell.
+[Tue Dec 15 23:08:05 2020] Raynes kicks froglok ilis knight for 58 points of damage.
+[Tue Dec 15 23:08:05 2020] You slash froglok ilis knight for 109 points of damage.
+[Tue Dec 15 23:08:05 2020] YOU are burned!
+[Tue Dec 15 23:08:05 2020] You slash froglok ilis knight for 185 points of damage.
+[Tue Dec 15 23:08:05 2020] YOU are burned!
+[Tue Dec 15 23:08:06 2020] Shamzoukas peers through a telescope.
+[Tue Dec 15 23:08:06 2020] Kyrinna begins to cast a spell.
+[Tue Dec 15 23:08:06 2020] Shamzoukas begins to cast a spell.
+[Tue Dec 15 23:08:06 2020] froglok ilis knight was hit by non-melee for 33 points of damage.
+[Tue Dec 15 23:08:06 2020] Froglok ilis knight bashes YOU for 40 points of damage.
+[Tue Dec 15 23:08:07 2020] Xenober hits froglok ilis knight for 18 points of damage.
+[Tue Dec 15 23:08:07 2020] Xenober hits froglok ilis knight for 62 points of damage.
+[Tue Dec 15 23:08:07 2020] Raynes crushes froglok ilis knight for 10 points of damage.
+[Tue Dec 15 23:08:07 2020] Kyrinna's casting is interrupted!
+[Tue Dec 15 23:08:08 2020] You slash froglok ilis knight for 122 points of damage.
+[Tue Dec 15 23:08:08 2020] YOU are burned!
+[Tue Dec 15 23:08:08 2020] You slash froglok ilis knight for 243 points of damage.
+[Tue Dec 15 23:08:08 2020] YOU are burned!
+[Tue Dec 15 23:08:08 2020] Xenober hits froglok ilis knight for 37 points of damage.
+[Tue Dec 15 23:08:08 2020] Syadasty slashes froglok ilis knight for 41 points of damage.
+[Tue Dec 15 23:08:09 2020] Shamzoukas peers through a telescope.
+[Tue Dec 15 23:08:09 2020] Xenober hits froglok ilis knight for 18 points of damage.
+[Tue Dec 15 23:08:09 2020] Xenober hits froglok ilis knight for 54 points of damage.
+[Tue Dec 15 23:08:09 2020] Syadasty slashes froglok ilis knight for 38 points of damage.
+[Tue Dec 15 23:08:09 2020] Syadasty slashes froglok ilis knight for 90 points of damage.
+[Tue Dec 15 23:08:09 2020] Raynes crushes froglok ilis knight for 129 points of damage.
+[Tue Dec 15 23:08:09 2020] Raynes crushes froglok ilis knight for 23 points of damage.
+[Tue Dec 15 23:08:09 2020] Shamzoukas begins to cast a spell.
+[Tue Dec 15 23:08:10 2020] Xenober hits froglok ilis knight for 18 points of damage.
+[Tue Dec 15 23:08:11 2020] Xenober kicks froglok ilis knight for 71 points of damage.
+[Tue Dec 15 23:08:11 2020] Xenober hits froglok ilis knight for 37 points of damage.
+[Tue Dec 15 23:08:12 2020] Syadasty slashes froglok ilis knight for 60 points of damage.
+[Tue Dec 15 23:08:12 2020] Shamzoukas peers through a telescope.
+[Tue Dec 15 23:08:13 2020] You taunt froglok ilis knight to ignore others and attack you!
+[Tue Dec 15 23:08:13 2020] You slash froglok ilis knight for 93 points of damage.
+[Tue Dec 15 23:08:13 2020] YOU are burned!
+[Tue Dec 15 23:08:13 2020] froglok ilis knight says 'I'll teach you to interfere with me Leuke.'
+[Tue Dec 15 23:08:13 2020] Syadasty slashes froglok ilis knight for 62 points of damage.
+[Tue Dec 15 23:08:13 2020] Syadasty slashes froglok ilis knight for 25 points of damage.
+[Tue Dec 15 23:08:13 2020] Shamzoukas begins to cast a spell.
+[Tue Dec 15 23:08:14 2020] Xenober hits froglok ilis knight for 62 points of damage.
+[Tue Dec 15 23:08:14 2020] Xenober hits froglok ilis knight for 16 points of damage.
+[Tue Dec 15 23:08:14 2020] Xenober hits froglok ilis knight for 52 points of damage.
+[Tue Dec 15 23:08:14 2020] Xenober hits froglok ilis knight for 62 points of damage.
+[Tue Dec 15 23:08:14 2020] Syadasty slashes froglok ilis knight for 43 points of damage.
+[Tue Dec 15 23:08:14 2020] Raynes crushes froglok ilis knight for 69 points of damage.
+[Tue Dec 15 23:08:15 2020] Raynes crushes froglok ilis knight for 29 points of damage.
+[Tue Dec 15 23:08:15 2020] Froglok ilis knight hits Xenober for 62 points of damage.
+[Tue Dec 15 23:08:15 2020] You slash froglok ilis knight for 122 points of damage.
+[Tue Dec 15 23:08:15 2020] YOU are burned!
+[Tue Dec 15 23:08:15 2020] You slash froglok ilis knight for 104 points of damage.
+[Tue Dec 15 23:08:15 2020] YOU are burned!
+[Tue Dec 15 23:08:15 2020] Syadasty slashes froglok ilis knight for 17 points of damage.
+[Tue Dec 15 23:08:16 2020] You slash froglok ilis knight for 216 points of damage.
+[Tue Dec 15 23:08:16 2020] YOU are burned!
+[Tue Dec 15 23:08:16 2020] Shamzoukas peers through a telescope.
+[Tue Dec 15 23:08:16 2020] Shamzoukas begins to cast a spell.
+[Tue Dec 15 23:08:16 2020] Xenober hits froglok ilis knight for 18 points of damage.
+[Tue Dec 15 23:08:16 2020] You kick froglok ilis knight for 6 points of damage.
+[Tue Dec 15 23:08:16 2020] YOU are burned!
+[Tue Dec 15 23:08:16 2020] Syadasty beams a smile at froglok ilis knight
+[Tue Dec 15 23:08:16 2020] Syadasty says 'Ahhh, I feel much better now...'
+[Tue Dec 15 23:08:16 2020] Syadasty slashes froglok ilis knight for 57 points of damage.
+[Tue Dec 15 23:08:16 2020] Kyrinna begins to cast a spell.
+[Tue Dec 15 23:08:17 2020] Xenober kicks froglok ilis knight for 68 points of damage.
+[Tue Dec 15 23:08:17 2020] Xenober hits froglok ilis knight for 32 points of damage.
+[Tue Dec 15 23:08:17 2020] Xenober hits froglok ilis knight for 49 points of damage.
+[Tue Dec 15 23:08:17 2020] Xenober hits froglok ilis knight for 25 points of damage.
+[Tue Dec 15 23:08:18 2020] The Aegis dies down.
+[Tue Dec 15 23:08:18 2020] You slash froglok ilis knight for 231 points of damage.
+[Tue Dec 15 23:08:18 2020] YOU are burned!
+[Tue Dec 15 23:08:18 2020] Raynes crushes froglok ilis knight for 71 points of damage.
+[Tue Dec 15 23:08:19 2020] Shamzoukas peers through a telescope.
+[Tue Dec 15 23:08:20 2020] Shamzoukas begins to cast a spell.
+[Tue Dec 15 23:08:20 2020] Xenober hits froglok ilis knight for 30 points of damage.
+[Tue Dec 15 23:08:20 2020] Syadasty slashes froglok ilis knight for 86 points of damage.
+[Tue Dec 15 23:08:20 2020] Syadasty looks very tranquil.
+[Tue Dec 15 23:08:20 2020] Maladark begins to cast a spell.
+[Tue Dec 15 23:08:20 2020] You slash froglok ilis knight for 101 points of damage.
+[Tue Dec 15 23:08:20 2020] YOU are burned!
+[Tue Dec 15 23:08:20 2020] You slash froglok ilis knight for 147 points of damage.
+[Tue Dec 15 23:08:20 2020] YOU are burned!
+[Tue Dec 15 23:08:21 2020] Raynes crushes froglok ilis knight for 71 points of damage.
+[Tue Dec 15 23:08:21 2020] Raynes crushes froglok ilis knight for 71 points of damage.
+[Tue Dec 15 23:08:21 2020] Xenober hits froglok ilis knight for 32 points of damage.
+[Tue Dec 15 23:08:21 2020] Xenober hits froglok ilis knight for 62 points of damage.
+[Tue Dec 15 23:08:21 2020] Syadasty slashes froglok ilis knight for 70 points of damage.
+[Tue Dec 15 23:08:22 2020] Xenober hits froglok ilis knight for 62 points of damage.
+[Tue Dec 15 23:08:22 2020] Xenober hits froglok ilis knight for 62 points of damage.
+[Tue Dec 15 23:08:22 2020] Syadasty slashes froglok ilis knight for 62 points of damage.
+[Tue Dec 15 23:08:22 2020] Syadasty slashes froglok ilis knight for 39 points of damage.
+[Tue Dec 15 23:08:23 2020] Shamzoukas peers through a telescope.
+[Tue Dec 15 23:08:23 2020] Froglok ilis knight hits YOU for 38 points of damage.
+[Tue Dec 15 23:08:23 2020] You slash froglok ilis knight for 42 points of damage.
+[Tue Dec 15 23:08:23 2020] YOU are burned!
+[Tue Dec 15 23:08:23 2020] Shamzoukas begins to cast a spell.
+[Tue Dec 15 23:08:23 2020] Xenober kicks froglok ilis knight for 51 points of damage.
+[Tue Dec 15 23:08:24 2020] Xenober hits froglok ilis knight for 45 points of damage.
+[Tue Dec 15 23:08:24 2020] Xenober hits froglok ilis knight for 49 points of damage.
+[Tue Dec 15 23:08:24 2020] Syadasty slashes froglok ilis knight for 25 points of damage.
+[Tue Dec 15 23:08:24 2020] Froglok ilis knight hits YOU for 62 points of damage.
+[Tue Dec 15 23:08:25 2020] Xenober hits froglok ilis knight for 62 points of damage.
+[Tue Dec 15 23:08:25 2020] Syadasty slashes froglok ilis knight for 30 points of damage.
+[Tue Dec 15 23:08:25 2020] Syadasty slashes froglok ilis knight for 22 points of damage.
+[Tue Dec 15 23:08:25 2020] Raynes crushes froglok ilis knight for 50 points of damage.
+[Tue Dec 15 23:08:25 2020] Raynes crushes froglok ilis knight for 15 points of damage.
+[Tue Dec 15 23:08:25 2020] You slash froglok ilis knight for 134 points of damage.
+[Tue Dec 15 23:08:25 2020] YOU are burned!
+[Tue Dec 15 23:08:25 2020] You slash froglok ilis knight for 115 points of damage.
+[Tue Dec 15 23:08:25 2020] YOU are burned!
+[Tue Dec 15 23:08:26 2020] Xenober hits froglok ilis knight for 62 points of damage.
+[Tue Dec 15 23:08:26 2020] Xenober hits froglok ilis knight for 35 points of damage.
+[Tue Dec 15 23:08:26 2020] Xenober hits froglok ilis knight for 62 points of damage.
+[Tue Dec 15 23:08:26 2020] Syadasty slashes froglok ilis knight for 77 points of damage.
+[Tue Dec 15 23:08:26 2020] Syadasty slashes froglok ilis knight for 27 points of damage.
+[Tue Dec 15 23:08:26 2020] Shamzoukas peers through a telescope.
+[Tue Dec 15 23:08:26 2020] Raynes crushes froglok ilis knight for 71 points of damage.
+[Tue Dec 15 23:08:26 2020] Raynes crushes froglok ilis knight for 141 points of damage.
+[Tue Dec 15 23:08:27 2020] Shamzoukas begins to cast a spell.
+[Tue Dec 15 23:08:27 2020] Xenober hits froglok ilis knight for 62 points of damage.
+[Tue Dec 15 23:08:27 2020] Syadasty slashes froglok ilis knight for 73 points of damage.
+[Tue Dec 15 23:08:28 2020] You slash froglok ilis knight for 114 points of damage.
+[Tue Dec 15 23:08:28 2020] YOU are burned!
+[Tue Dec 15 23:08:28 2020] Xenober hits froglok ilis knight for 62 points of damage.
+[Tue Dec 15 23:08:28 2020] Xenober hits froglok ilis knight for 16 points of damage.
+[Tue Dec 15 23:08:28 2020] Syadasty slashes froglok ilis knight for 44 points of damage.
+[Tue Dec 15 23:08:28 2020] Raynes crushes froglok ilis knight for 17 points of damage.
+[Tue Dec 15 23:08:28 2020] Raynes crushes froglok ilis knight for 59 points of damage.
+[Tue Dec 15 23:08:30 2020] Xenober kicks froglok ilis knight for 19 points of damage.
+[Tue Dec 15 23:08:30 2020] Shamzoukas peers through a telescope.
+[Tue Dec 15 23:08:30 2020] You slash froglok ilis knight for 142 points of damage.
+[Tue Dec 15 23:08:30 2020] YOU are burned!
+[Tue Dec 15 23:08:31 2020] Shamzoukas begins to cast a spell.
+[Tue Dec 15 23:08:31 2020] Syadasty slashes froglok ilis knight for 45 points of damage.
+[Tue Dec 15 23:08:32 2020] Raynes crushes froglok ilis knight for 150 points of damage.
+[Tue Dec 15 23:08:32 2020] Xenober hits froglok ilis knight for 62 points of damage.
+[Tue Dec 15 23:08:32 2020] Syadasty slashes froglok ilis knight for 90 points of damage.
+[Tue Dec 15 23:08:32 2020] Raynes crushes froglok ilis knight for 30 points of damage.
+[Tue Dec 15 23:08:33 2020] You slash froglok ilis knight for 59 points of damage.
+[Tue Dec 15 23:08:33 2020] YOU are burned!
+[Tue Dec 15 23:08:33 2020] You slash froglok ilis knight for 186 points of damage.
+[Tue Dec 15 23:08:33 2020] YOU are burned!
+[Tue Dec 15 23:08:33 2020] Xenober hits froglok ilis knight for 42 points of damage.
+[Tue Dec 15 23:08:33 2020] Syadasty slashes froglok ilis knight for 18 points of damage.
+[Tue Dec 15 23:08:34 2020] Xenober hits froglok ilis knight for 16 points of damage.
+[Tue Dec 15 23:08:34 2020] Syadasty slashes froglok ilis knight for 37 points of damage.
+[Tue Dec 15 23:08:34 2020] Syadasty slashes froglok ilis knight for 37 points of damage.
+[Tue Dec 15 23:08:35 2020] Maladark begins to cast a spell.
+[Tue Dec 15 23:08:36 2020] Xenober hits froglok ilis knight for 62 points of damage.
+[Tue Dec 15 23:08:36 2020] Syadasty beams a smile at froglok ilis knight
+[Tue Dec 15 23:08:36 2020] Syadasty says 'Ahhh, I feel much better now...'
+[Tue Dec 15 23:08:36 2020] Syadasty slashes froglok ilis knight for 39 points of damage.
+[Tue Dec 15 23:08:37 2020] Shamzoukas falls into a state of torpor.
+[Tue Dec 15 23:08:37 2020] Syadasty begins to cast a spell.
+[Tue Dec 15 23:08:38 2020] You slash froglok ilis knight for 69 points of damage.
+[Tue Dec 15 23:08:38 2020] YOU are burned!
+[Tue Dec 15 23:08:38 2020] YOU are burned!
+[Tue Dec 15 23:08:38 2020] You slash froglok ilis knight for 206 points of damage.
+[Tue Dec 15 23:08:38 2020] You have slain froglok ilis knight!
+[Tue Dec 15 23:08:38 2020] Your faction standing with LegionofCabilis could not possibly get any better.
+[Tue Dec 15 23:08:38 2020] Your faction standing with Trakanon could not possibly get any worse.
+[Tue Dec 15 23:08:38 2020] You gain party experience!!
+[Tue Dec 15 23:08:39 2020] Maladark's casting is interrupted!
+[Tue Dec 15 23:08:41 2020] Shamzoukas peers through a telescope.
+[Tue Dec 15 23:08:42 2020] Shamzoukas begins to cast a spell.
+[Tue Dec 15 23:08:42 2020] Xenober hits froglok krup shaman for 16 points of damage.
+[Tue Dec 15 23:08:42 2020] Froglok krup shaman hits Syadasty for 91 points of damage.
+[Tue Dec 15 23:08:42 2020] Maladark begins to cast a spell.
+[Tue Dec 15 23:08:43 2020] Auto attack on.
