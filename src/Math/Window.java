@@ -79,8 +79,8 @@ public class Window extends LinkedList {
     public double[] PCI(){
         
         int n = elements.size();
-        int k = 6;
-        int[] weights = new int[n];
+        int k = n/2;
+        int[] weights = new int[2*k+1];
         double sumtotal = 0.0;
         double sumweights = 0.0;
         //twosided
@@ -112,7 +112,7 @@ public class Window extends LinkedList {
         }
         double s = Math.sqrt(sumtotal/(2*k-2));
         double lower = v-0.868*s*Math.sqrt(1+1/(2*k));
-        double upper =v+0.692*s*Math.sqrt(1+1/(2*k));
+        double upper =v+0.283*s*Math.sqrt(1+1/(2*k));
         double[] CI = {round(lower,2), round(upper,2)};
         return CI;
     }

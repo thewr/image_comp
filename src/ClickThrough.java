@@ -14,6 +14,7 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.BorderFactory;
 import javax.swing.Box.Filler;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.GroupLayout;
@@ -23,6 +24,7 @@ import javax.swing.JDesktopPane;
 
 import javax.swing.JFrame;
 import javax.swing.JInternalFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JScrollPane;
@@ -32,6 +34,8 @@ import javax.swing.JTextField;
 import javax.swing.JTextPane;
 import javax.swing.JToggleButton;
 import javax.swing.SwingUtilities;
+import javax.swing.border.BevelBorder;
+import javax.swing.border.EmptyBorder;
 import javax.swing.border.TitledBorder;
 
 public class ClickThrough extends JFrame {
@@ -57,6 +61,7 @@ public class ClickThrough extends JFrame {
     private JPanel jpSlider = new JPanel();
     private JSlider jSlider = new JSlider();
     private JPanel jpBottom = new JPanel();
+    private JLabel jLabel1 = new JLabel();
 
 
     public static LinkedList<String> stream = new LinkedList<>();
@@ -65,7 +70,7 @@ public class ClickThrough extends JFrame {
     private JPanel jPanelCLR = new JPanel();
    
     private JCheckBox jCheckSIT = new JCheckBox();;
-    private JTextField jTextOrder = new JTextField();
+    private JTextField jTextOrder = new JTextField(2);
     private JCheckBox jSlowed = new JCheckBox();
     private JComboBox jCombo = new JComboBox();
     
@@ -87,8 +92,6 @@ public class ClickThrough extends JFrame {
     private void initComponents(){
         setAlwaysOnTop(true);
         
-        setBackground(Color.darkGray);
-
         //setUndecorated(true);
         //setBackground(new Color(1.0f,1.0f,1.0f,0.5f));
        // setLayout(jCard);
@@ -103,38 +106,7 @@ public class ClickThrough extends JFrame {
         //f.setSize(new java.awt.Dimension(450, 450));
         
         //CLERIC PANEL
-        jPanelCLR.setBackground(Constants.colorNOTSELECTED);
-        jPanelCLR.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanelCLR.setLayout(new java.awt.BorderLayout());
-
-        jCheckSIT.setBackground(Constants.colorNOTSELECTED);
-        jCheckSIT.setForeground(new java.awt.Color(0, 0, 0));
-        jCheckSIT.setText("SIT");
-        jCheckSIT.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
-        jPanelCLR.add(jCheckSIT, java.awt.BorderLayout.LINE_START);
-
-        jTextOrder.setText("111");
-        jTextOrder.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jTextOrder.setSelectionStart(5);
-        jTextOrder.setHorizontalAlignment(JTextField.CENTER);
-        jTextOrder.setBackground(Color.BLACK);
-        jTextOrder.setForeground(Color.WHITE);
-        jPanelCLR.add(jTextOrder, java.awt.BorderLayout.PAGE_END);
-
-        jSlowed.setText("SLOW");
-        jSlowed.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
-        jPanelCLR.add(jSlowed, java.awt.BorderLayout.LINE_END);
-
-        String[] clrStrings = { "CH", "CHAIN", "LHEALS", "NONE"};
-        DefaultComboBoxModel<String> model = new DefaultComboBoxModel<>( clrStrings );
-        jCombo.setModel( model );
-        jCombo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboActionPerformed(evt);
-            }
-        });
-        
-        jPanelCLR.add(jCombo, BorderLayout.PAGE_START);
+        createCLRPanel();
        
         
         // MAKE TABE PANE
@@ -187,48 +159,93 @@ public class ClickThrough extends JFrame {
             jPanelLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
         );
+        
+        ///SLIDER
+        jpSlider.setBackground(Constants.colorNOTSELECTED);
+        jSlider.setForeground(new java.awt.Color(0, 0, 0));
+        jSlider.setSnapToTicks(true);
+        jLabel1.setText("70.0%");
+        jSlider.setValue(70);
+        jSlider.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jSlider.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                jSliderStateChanged(evt);
+            }
+        });
 
+        jrHealth = new JRadioButton();
+        jrHealth.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
+        jrHealth.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioHEALTHActionPerformed(evt);
+            }
+        });
+        
 
-        javax.swing.GroupLayout jPanel18Layout = new javax.swing.GroupLayout(jPanelTab);
-        jPanelTab.setLayout(jPanel18Layout);
-        jPanel18Layout.setHorizontalGroup(
-            jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel18Layout.createSequentialGroup()
-                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel18Layout.createSequentialGroup()
-                        .addComponent(filler, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jrSaax, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jrSeike, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jrMorley, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jrLeuke, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-
-                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanelActions, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
-                )
+        javax.swing.GroupLayout jpSliderLayout = new javax.swing.GroupLayout(jpSlider);
+        jpSlider.setLayout(jpSliderLayout);
+        jpSliderLayout.setHorizontalGroup(
+            jpSliderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpSliderLayout.createSequentialGroup()
+                .addComponent(jSlider, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel1))
         );
-        jPanel18Layout.setVerticalGroup(
-            jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel18Layout.createSequentialGroup()
-                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jPanelActions, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(jPanel18Layout.createSequentialGroup()
-                        .addComponent(jrMorley)
-                        .addComponent(jrSeike)
+        jpSliderLayout.setVerticalGroup(
+            jpSliderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpSliderLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jpSliderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jSlider)
+                    .addComponent(jLabel1)
+                )
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        
+        GroupLayout jPanelTabLayout = new GroupLayout(jPanelTab);
+        jPanelTab.setLayout(jPanelTabLayout);
+        jPanelTabLayout.setHorizontalGroup(
+            jPanelTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelTabLayout.createSequentialGroup()
+                    .addGroup(jPanelTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelTabLayout.createSequentialGroup()
+                        .addGroup(jPanelTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jrSaax)
+                            .addComponent(jrSeike)
+                            .addComponent(jrMorley)
+                            .addComponent(jrLeuke)
+                        )
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addGap(10, 10, 10)
+                        .addComponent(jPanelActions, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jpSlider, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanelTabLayout.setVerticalGroup(
+            jPanelTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelTabLayout.createSequentialGroup()
+                .addGroup(jPanelTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelTabLayout.createSequentialGroup()
+                        .addComponent(jPanelActions, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelTabLayout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jrSaax)
+                        .addComponent(jrSeike)
+                        .addComponent(jrMorley)
                         .addComponent(jrLeuke)
-                        .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel18Layout.createSequentialGroup()
-                                .addComponent(filler, GroupLayout.PREFERRED_SIZE, 5, GroupLayout.PREFERRED_SIZE)
-                                ))))
-                )
+                        .addGap(10, 10, 10)))
+                .addComponent(jpSlider, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(15, 15, 15))
         );
-        jTabbedPane.addTab("CHARACTER", jPanelTab);
+        
+        jPanelTab.add(jpSlider, BorderLayout.PAGE_END);
+        jTabbedPane.addTab("CHAR", jPanelTab);
         
         jPanelActions.setLayout(jCard);
         jPanelActions.add(jPanelCLR,"CLR");
         jPanelActions.setBackground(Constants.colorNOTSELECTED);
         jCard.show(jPanelActions, "CLR");
-        
         
         
         
@@ -295,11 +312,11 @@ public class ClickThrough extends JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jTabbedPane.addTab("LOCATE", jPanelTab2);
+        jTabbedPane.addTab("LOC", jPanelTab2);
         
         
-        
-        
+        JPanel jPanelTab3 = new JPanel();
+        jTabbedPane.addTab("ADD", jPanelTab3);
         
         
         
@@ -317,55 +334,8 @@ public class ClickThrough extends JFrame {
         log.setForeground(new java.awt.Color(0, 0, 0));
         jScrollPane.setViewportView(log);
         
-        ///SLIDER
-       
-        jpSlider.setBackground(Constants.colorNOTSELECTED);
-        jpSlider.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-        jSlider.setBackground(Constants.colorNOTSELECTED);
-        //jSlider.setFont(new java.awt.Font("Dialog", 1, 8)); // NOI18N
-        jSlider.setForeground(new java.awt.Color(0, 0, 0));
-        jSlider.setMajorTickSpacing(10);
-        //jSlider.setPaintLabels(true);
-        jSlider.setPaintTicks(true);
-        jSlider.setSnapToTicks(true);
-        jSlider.setValue(70);
-        jSlider.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jSlider.addChangeListener(new javax.swing.event.ChangeListener() {
-            public void stateChanged(javax.swing.event.ChangeEvent evt) {
-                jSliderStateChanged(evt);
-            }
-        });
-
-        jrHealth = new JRadioButton();
-        jrHealth.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
-        jrHealth.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioHEALTHActionPerformed(evt);
-            }
-        });
         
-
-        javax.swing.GroupLayout jpSliderLayout = new javax.swing.GroupLayout(jpSlider);
-        jpSlider.setLayout(jpSliderLayout);
-        jpSliderLayout.setHorizontalGroup(
-            jpSliderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jpSliderLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jrHealth)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jSlider, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                )
-        );
-        jpSliderLayout.setVerticalGroup(
-            jpSliderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jpSliderLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jpSliderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jrHealth)
-                    .addComponent(jSlider))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+        ////////////
         
         jtStream.setBackground(new java.awt.Color(0, 0, 0));
         jtStream.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, null));
@@ -397,14 +367,14 @@ public class ClickThrough extends JFrame {
         
         
         JDesktopPane desktop = new JDesktopPane();
-        JInternalFrame iFrame1 = createInternalFrame(log, "LOG");
-        iFrame1.setSize(250, 130);
-        iFrame1.setLocation(0,70);
+       // JInternalFrame iFrame1 = createInternalFrame(log, "LOG");
+       // iFrame1.setSize(200, 130);
+       // iFrame1.setLocation(0,70);
         JInternalFrame iFrame2 = createInternalFrame(jtStream, "STREAM");
-        iFrame2.setSize(150, 50);
+        iFrame2.setSize(200, 80);
         iFrame2.setLocation(0,0);
 
-        desktop.add(iFrame1, BorderLayout.PAGE_END);
+       // desktop.add(iFrame1, BorderLayout.PAGE_END);
         desktop.add(iFrame2, BorderLayout.PAGE_START);
         JPanel panel = new JPanel(new BorderLayout());
         panel.setBorder(new TitledBorder("DesktopPane"));
@@ -419,9 +389,9 @@ public class ClickThrough extends JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(5, 5, 5)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jTabbedPane, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jpSlider, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(desktop, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTabbedPane, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    //.addComponent(jpSlider, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(desktop, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                 )
                 .addGap(5, 5, Short.MAX_VALUE))
         );
@@ -429,11 +399,11 @@ public class ClickThrough extends JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(5, 5, 5)
-                .addComponent(jTabbedPane, javax.swing.GroupLayout.PREFERRED_SIZE,135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jTabbedPane, javax.swing.GroupLayout.PREFERRED_SIZE,175, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(5, 5, 5)
-                .addComponent(jpSlider, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                //.addComponent(jpSlider, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(desktop, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)  
+                .addComponent(desktop, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)  
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
        
@@ -465,7 +435,8 @@ public class ClickThrough extends JFrame {
 
         if(button.isSelected())
         {
-            log.append("Morley is selected" + "\n");
+            //log.append("Morley is selected" + "\n");
+            inTextStream("\n" + "Morley is selected" + "\n");
             button.setBackground(Constants.colorSELECTED);
             jCard.show(jPanelActions, "CLR");
             clearNotSelected(button);
@@ -492,7 +463,7 @@ public class ClickThrough extends JFrame {
         if(button.isSelected())
         {
             String name = button.getText();
-            log.append(name + " is selected" + "\n");
+            inTextStream("\n" + name + " is selected" + "\n");
             button.setBackground(Constants.colorSELECTED);
             jCard.show(jPanelActions, "CLR");
             clearNotSelected(button);
@@ -520,10 +491,10 @@ public class ClickThrough extends JFrame {
         Iterator it = stream.listIterator();
         while(it.hasNext())
         {
-            lines += " " + it.next();
+            lines += it.next() + " ";
         }
         jtStream.setText(lines);
-        if(stream.size()>7)
+        if(stream.size()>18)
             stream.removeLast();
     }
     
@@ -537,7 +508,6 @@ public class ClickThrough extends JFrame {
     
     public void clearNotSelected(JRadioButton button)
     {
-        System.out.println("CLEARING UNSELECTED!");
         Iterator it = Constants.radioButtons.listIterator();
         button.setBackground(Constants.colorSELECTED);
         JRadioButton selected = null;
@@ -559,17 +529,17 @@ public class ClickThrough extends JFrame {
 
         switch (selection) {
             case "CH":
-            log.append("CH Normal " + Constants.clr.isCH() + "  Order: " + Constants.CHorder + "\n");
+            inTextStream( "\n"+"CH Normal " + Constants.clr.isCH() + "  Order: " + Constants.CHorder + "\n");
             //initial CH
             break;
             case "CHAIN":
             Constants.CHorder = jTextOrder.getText().trim();
-            log.append("Chain " + Constants.clr.isCHAIN() + "  Order: " + Constants.CHorder + "\n");
+            inTextStream("\n"+"Chain " + Constants.clr.isCHAIN() + "  Order: " + Constants.CHorder + "\n");
             break;
             case "LHEALS":
             // TODO add your handling code here:
             Constants.clr.setSelected(selection);
-            log.append("Lheals " + Constants.clr.isLHEALS()+"\n");
+            inTextStream("\n"+"Lheals " + Constants.clr.isLHEALS()+"\n");
             break;
             case "NONE":
             Constants.clr.bStart = false;
@@ -604,6 +574,7 @@ public class ClickThrough extends JFrame {
         if (!source.getValueIsAdjusting()) {
             log.append("Upper limit set to " + (int)source.getValue() +"%"+ "\n");
             Constants.sliderval = (int)source.getValue();
+            jLabel1.setText(Double.toString(Constants.sliderval)+"%");
         }
     }    
     
@@ -700,6 +671,50 @@ public class ClickThrough extends JFrame {
         frame.setVisible(true);
         return frame;
       }
+    
+    private void createCLRPanel(){
+        //CLERIC PANEL
+        
+        jPanelCLR.setBorder(BorderFactory.createBevelBorder(BevelBorder.LOWERED));
+        jPanelCLR.setLayout(new java.awt.BorderLayout());
+        
+
+        //jCheckSIT.setBackground(Constants.colorNOTSELECTED);
+        jCheckSIT.setForeground(new java.awt.Color(0, 0, 0));
+        jCheckSIT.setText("SIT");
+        jCheckSIT.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
+        jPanelCLR.add(jCheckSIT, java.awt.BorderLayout.LINE_START);
+
+        jTextOrder.setText("111");
+        jTextOrder.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jTextOrder.setSelectionStart(5);
+        jTextOrder.setHorizontalAlignment(JTextField.CENTER);
+        jPanelCLR.add(jTextOrder, java.awt.BorderLayout.PAGE_END);
+
+        jSlowed.setText("SLOW");
+        jSlowed.setForeground(new java.awt.Color(0, 0, 0));
+        jSlowed.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
+        jPanelCLR.add(jSlowed, java.awt.BorderLayout.LINE_END);
+
+        String[] clrStrings = { "CH", "CHAIN", "LHEALS", "NONE"};
+        DefaultComboBoxModel<String> model = new DefaultComboBoxModel<>( clrStrings );
+        jCombo.setModel( model );
+        
+        jCombo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboActionPerformed(evt);
+            }
+        });
+        JPanel top = new JPanel();
+        top.add(jCombo, BorderLayout.WEST);
+        top.add(jTextOrder, BorderLayout.EAST);
+        jTextOrder.setBorder(new EmptyBorder(3,0,3,0));
+        jTextOrder.setBorder(BorderFactory.createLineBorder(Color.black));
+        top.setBorder(new EmptyBorder(10,0,10,0));
+        
+        
+        jPanelCLR.add(top, BorderLayout.PAGE_START);
+    }
     
 
 }
